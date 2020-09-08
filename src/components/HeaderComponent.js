@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Navbar, Nav, NavLink, NavbarToggler, Collapse, NavItem, Container, Row, Dropdown, DropdownToggle, DropdownMenu, DropdownItem} from 'reactstrap';
 
 
-class Header extends Component {
+export default class Header extends Component {
 
     constructor(props) {
         super(props);
@@ -84,6 +84,3 @@ class Header extends Component {
         )
     }
 }
-
-
-export default Header;
