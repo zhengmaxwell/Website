@@ -22,4 +22,11 @@ export const EXPERIENCES =
                         Queried and analyzed data from enterprise databases using SQL. \
                         Developed a new GUI to standardize company-wide internal metrics using HTML, CSS, and JS'
     },
+    {
+        company: 'UofT IBBME',
+        position: 'Biomedical Engineering Research Intern',
+        location: 'Toronto, Ontario',
+        period: 'April 2019 - August 2019',
+        description: 'Conducted various tests using PCR and Gel Electrophoresis to sythesize and analyze DNA'
+    }
 ]

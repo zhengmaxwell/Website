@@ -1,3 +1,8 @@
+* {
+  font-size: 100%;
+  font-family: Helvetica, sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -47,10 +52,21 @@
   min-height:200px;
 }
 
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
 h3 {
   font-size: 25px;
+  font-weight: bold;
 }
 
 h4 {
   font-size: 20px;
+  font-weight: bold;
+}
+
+.split-list {
+  column-count: 2;
 }

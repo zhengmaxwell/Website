@@ -25,7 +25,7 @@ export default class Education extends Component {
 
             rows.push(
                 <Row className="row-content">
-                    <Col md="5" s="12">
+                    <Col md="4" s="12">
                         <h3>{education.school}</h3>
                         <br/>
                         <em>{education.period}</em>
