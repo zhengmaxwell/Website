@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, NavLink, NavbarToggler, Collapse, NavItem, Container, Dropdown, DropdownToggle, DropdownMenu, DropdownItem, Jumbotron} from 'reactstrap';
+import { Navbar, Nav, NavLink, NavbarToggler, Collapse, NavItem, Container, Row, Col, Dropdown, DropdownToggle, DropdownMenu, DropdownItem, Jumbotron} from 'reactstrap';
 import * as $ from 'jquery'
 
 
@@ -51,7 +51,7 @@ export default class Header extends Component {
         
         return (
             <div>
-                <Navbar color="dark" expand="md">
+                <Navbar color="dark" expand="lg">
                     <Container>
                         <NavbarToggler onClick={this.toggleNav}/>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
@@ -94,7 +94,7 @@ export default class Header extends Component {
                     </Container>
                 </Navbar>
                 <Jumbotron>
-                    <h1>Maxwell Zheng</h1>
+                    <h1 align="center">Maxwell Zheng</h1>
                 </Jumbotron>
             </div>
         )
