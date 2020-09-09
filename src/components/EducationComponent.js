@@ -15,7 +15,6 @@ export default class Education extends Component {
         let rows = [];
         
         EDUCATION.forEach(education => {
-            
             let list = [];
             let points = education.description.split(". ");
             points.forEach(point => {

@@ -15,6 +15,14 @@ export default class Experiences extends Component {
         let rows = [];
 
         EXPERIENCES.forEach(experience => {
+            let list = [];
+            let points = experience.description.split(". ");
+            points.forEach(point => {
+                list.push(
+                    <li>{point}</li>
+                );
+            });
+
             rows.push(
                 <Row className="row-content">
                     <Col md="5" s="12">
@@ -28,7 +36,9 @@ export default class Experiences extends Component {
                         <h4>{experience.position}</h4>
                         <br/>
                         <div className="d-none d-md-block">
-                            {experience.description}
+                            <ul>
+                                {list}
+                            </ul>
                         </div>
                     </Col>
                 </Row>
