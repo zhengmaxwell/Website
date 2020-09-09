@@ -26,7 +26,7 @@ export default class Education extends Component {
 
             rows.push(
                 <Row className="row-content">
-                    <Col md="4">
+                    <Col md="5" s="12">
                         <h3>{education.school}</h3>
                         <br/>
                         <em>{education.period}</em>
@@ -36,9 +36,11 @@ export default class Education extends Component {
                     <Col>
                         <h4>{education.degree}</h4>
                         <br/>
-                        <ul>
-                            {list}
-                        </ul>
+                        <div className="d-none d-md-block">
+                            <ul>
+                                {list}
+                            </ul>
+                        </div>
                     </Col>
                 </Row>
             )
