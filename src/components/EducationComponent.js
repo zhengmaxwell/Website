@@ -13,8 +13,17 @@ export default class Education extends Component {
 
     RenderEducation() {
         let rows = [];
-
+        
         EDUCATION.forEach(education => {
+            
+            let list = [];
+            let points = education.description.split(". ");
+            points.forEach(point => {
+                list.push(
+                    <li>{point}</li>
+                );
+            });
+
             rows.push(
                 <Row className="row-content">
                     <Col md="4">
@@ -27,7 +36,9 @@ export default class Education extends Component {
                     <Col>
                         <h4>{education.degree}</h4>
                         <br/>
-                        {education.description}
+                        <ul>
+                            {list}
+                        </ul>
                     </Col>
                 </Row>
             )

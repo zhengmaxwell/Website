@@ -6,7 +6,7 @@ export const EDUCATION =
         degree: 'Bachelors of Applied Science in Engineering Science',
         period: '2018 - 2022',
         location: 'Toronto, Ontario',
-        description: 'Specialization in Robotics Engineering. Double minor in Artificial Intelligence and Engineering Business.'
+        description: 'Specialization in Robotics Engineering. Double minor in Artificial Intelligence and Engineering Business'
     },
     {
         id: 1,
