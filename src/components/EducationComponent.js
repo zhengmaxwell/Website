@@ -12,55 +12,44 @@ export default class Education extends Component {
     }
 
     RenderEducation() {
-        console.log(EDUCATION);
+        let rows = [];
+
+        EDUCATION.forEach(education => {
+            rows.push(
+                <Row className="row-content">
+                    <Col md="4">
+                        <h3>{education.school}</h3>
+                        <br/>
+                        <em>{education.period}</em>
+                        <br/>
+                        <i className="fa fa-map-marker"></i> {education.location}
+                    </Col>
+                    <Col>
+                        <h4>{education.degree}</h4>
+                        <br/>
+                        {education.description}
+                    </Col>
+                </Row>
+            )
+        });
+
+        return (
+            <Container>
+                <Row>
+                    <Col align="center">
+                        <h2>Education</h2>
+                    </Col>
+                </Row>
+                <hr/>
+                {rows}
+            </Container>
+        )
     }
 
     render() {
-        this.RenderEducation();
         return (
-
             <div>
-                <Container>
-                    <Row>
-                        <Col align="center">
-                            <h2>Education</h2>
-                        </Col>
-                    </Row>
-                    <hr/>
-                    <Row className="row-content">
-                        <Col md="4">
-                            <h3>University of Toronto</h3>
-                            <br/>
-                            <em>2018 - 2022</em>
-                            <br/>
-                            <i className="fa fa-map-marker"></i> Toronto, Ontario
-                        </Col>
-                        <Col>
-                            <h4>Bachelor in Applied Sciences - Engineering Science</h4>
-                            <br/>
-                            <ul>
-                                <li>Major in Robotics Engineering</li>
-                                <li>Double minor in Artificial Intelligence and Engineering Business</li>
-                            </ul>
-                        </Col>
-                    </Row>
-                    <Row className="row-content">
-                        <Col md="4">
-                            <h3>Georgetown District High School</h3>
-                            <br/>
-                            <em>2014 - 2018</em>
-                            <br/>
-                            <i className="fa fa-map-marker"></i> Georgetown, Ontario
-                        </Col>
-                        <Col>
-                            <h4>International Baccalaureate Diploma Programme</h4>
-                            <br/>
-                            <ul>
-                                <li>Governor's General Medal Recipient</li>
-                            </ul>
-                        </Col>
-                    </Row>
-                </Container>
+                {this.RenderEducation()}
             </div>
         )
     }
