@@ -23,18 +23,15 @@ export default class Skills extends Component {
             });
             rows.push(
                 <div>
-                    <Row className="row-content">
-                        <Col md="12">
-                            <h3>{skill.name}</h3>
-                        </Col>
-                        <Row>
-                            <Col md="12">
-                                <ul className="split-list">
-                                    {list}
-                                </ul>
-                            </Col>
-                        </Row>
-                    </Row>
+                    <Col md="12" align="center">
+                        <h3>{skill.name}</h3>
+                    </Col>
+                    <Col md="12">
+                        <br/>
+                        <ul>
+                            {list}
+                        </ul>
+                    </Col>
                 </div>
             );
         });
@@ -47,7 +44,9 @@ export default class Skills extends Component {
                     </Col>
                 </Row>
                 <hr/>
-                {rows}
+                <Row className="row-content">
+                    {rows}
+                </Row>
             </Container>
         );
     }
