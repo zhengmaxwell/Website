@@ -3,9 +3,10 @@ import Header from './HeaderComponent';
 import Education from './EducationComponent';
 import Experiences from './ExperiencesComponent';
 import Skills from './SkillsComponent';
+import Contact from './ContactComponent';
 
 
-class Main extends Component {
+export default class Main extends Component {
 
     render() {
         return (
@@ -14,10 +15,8 @@ class Main extends Component {
                 <Education/>
                 <Experiences/>
                 <Skills/>
+                <Contact/>
             </div>
         )
     }
 }
-
-
-export default Main;

@@ -67,11 +67,23 @@ h4 {
     font-weight: bold;
 }
 
-.split-list {
-    column-count: 3;
-    column-gap: 100px;
+ul {
+    list-style-type: none;
+    list-style-position: none;
+    padding: 0;
 }
 
+@media (min-width: 1200px) {
+    .split-list-2 {
+        column-count: 2;
+        column-gap: 100px;
+    }
+}
+ 
 .split-list-item {
     margin: 0 0 10px 0;
+}
+
+i {
+    vertical-align: middle;
 }
