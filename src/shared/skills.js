@@ -49,6 +49,7 @@ export const SKILLS =
             'PyCharm',
             'IntelliJ',
             'CLion',
+            'Jupyter Notebook',
             'Apache',
             'Solidworks',
         ]
