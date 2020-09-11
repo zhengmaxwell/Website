@@ -38,10 +38,8 @@ export default class Skills extends Component {
 
         return (
             <Container>
-                <Row>
-                    <Col align="center">
-                        <h2>Skills</h2>
-                    </Col>
+                <Row className="justify-content-center">
+                    <h2>Skills</h2>
                 </Row>
                 <hr/>
                 <Row className="row-content">

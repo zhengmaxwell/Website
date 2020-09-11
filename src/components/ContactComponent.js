@@ -8,10 +8,8 @@ export default class Contact extends Component {
         return (
             <div>
                 <Container>
-                    <Row>
-                        <Col align="center">
-                            <h2>Contact Me</h2>
-                        </Col>
+                    <Row className="justify-content-center">
+                        <h2>Contact Me</h2>
                     </Row>
                     <hr/>
                     <Row className="row-content">

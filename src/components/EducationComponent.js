@@ -47,10 +47,8 @@ export default class Education extends Component {
 
         return (
             <Container>
-                <Row>
-                    <Col align="center">
-                        <h2>Education</h2>
-                    </Col>
+                <Row className="justify-content-center">
+                    <h2>Education</h2>
                 </Row>
                 <hr/>
                 {rows}

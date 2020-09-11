@@ -47,10 +47,8 @@ export default class Experiences extends Component {
 
         return (
             <Container>
-                <Row>
-                    <Col align="center">
-                        <h2>Experiences</h2>
-                    </Col>
+                <Row className="justify-content-center">
+                    <h2>Experiences</h2>
                 </Row>
                  <hr/>
                  {rows}

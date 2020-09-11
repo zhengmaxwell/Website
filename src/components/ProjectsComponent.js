@@ -54,29 +54,25 @@ export default class Projects extends Component {
         });
 
         return (
-            <Row>
-                <Col>
+            <Container>
+                <Row className="justify-content-center">
+                    <h2>Projects</h2>
+                </Row>
+                <hr/>
+                <Row className="row-content">
                     <ul className="split-list-2">
                         {rows}
                     </ul>
-                </Col>
-            </Row>
+                </Row>
+            </Container>
         );
     }
 
     render() {
         return (
-            <Container>
-                <Row>
-                    <Col align="center">
-                        <h2>Projects</h2>
-                    </Col>
-                </Row>
-                <hr/>
-                <Row className="row-content">
-                    {this.RenderProjects()}
-                </Row>
-            </Container>
+            <div>
+                {this.RenderProjects()}
+            </div>
         );
     }
 }
