@@ -8,10 +8,24 @@ export const PROJECTS =
         link: 'https://github.com/zhengmaxwell/Genre_Classifier'
     },
     {
+        name: 'Autonomous Car Charger',
+        description: 'An electromechanical solution to autonomously charge an electric car.',
+        tools: 'C++, Python, Arduino, Raspberyy Pi, OpenCV, SolidWorks',
+        image: '/images/random.jpg',
+        link: 'https://github.com/zhengmaxwell/Autonomous_Car_Charger'
+    },
+    {
         name: 'Chess',
         description: 'A chess engine with an AI player.',
         tools: 'Python, C#, WPF',
         image: '/images/random.jpg',
-        link: 'https://github.com/zhengmaxwell/Chess'
+        link: 'https://github.com/zhengmaxwell/Chess',
+    },
+    {
+        name: 'Bready',
+        description: 'An electromechanical solution based on experimental research to aid in predicting and detecting optimal dough fermentation.',
+        tools: 'C++, Arduino, SolidWorks',
+        image: '/images/random.jpg',
+        link: 'https://github.com/zhengmaxwell/Bready'
     }
 ]

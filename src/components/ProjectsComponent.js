@@ -8,17 +8,19 @@ export default class Projects extends Component {
     constructor(props) {
         super(props);
 
-        this.state = {
-            isModalOpen: false
-        }
+        this.state = {}
+
+        PROJECTS.forEach(project => {
+            this.state[project.name] = false;
+        });
 
         this.toggleModal = this.toggleModal.bind(this);
         this.RenderProjects = this.RenderProjects.bind(this);
     }
-
-    toggleModal() {
+    
+    toggleModal(name) {
         this.setState({
-            isModalOpen: !this.state.isModalOpen
+            [name]: !this.state[name]
         });
     }
 
@@ -30,9 +32,9 @@ export default class Projects extends Component {
                 <Row>
                     <Col md="6">
                         <div className="w-25 p-3">
-                            <li className="split-list-item"><Button onClick={this.toggleModal}><img src={project.image} width="300" height="300"/></Button></li>
-                            <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
-                                <ModalHeader toggle={this.toggleModal}>{project.name}</ModalHeader>
+                            <li className="split-list-item"><Button onClick={() => this.toggleModal(project.name)}><img src={project.image} width="300" height="300"/></Button></li>
+                            <Modal isOpen={this.state[project.name]} toggle={() => this.toggleModal(project.name)} >
+                                <ModalHeader toggle={() => this.toggleModal(project.name)}>{project.name}</ModalHeader>
                                 <ModalBody>
                                     <Card>
                                         <CardImg src={project.image} alt="Chess"/>
