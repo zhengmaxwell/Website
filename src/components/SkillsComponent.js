@@ -18,20 +18,19 @@ export default class Skills extends Component {
             let list = [];
             skill.list.forEach(item => {
                 list.push(
-                    <li>{item}</li>
+                    <li className="split-list-item">{item}</li>
                 );
             });
             rows.push(
                 <div>
-                    <Col md="12" align="center">
+                    <Row>
                         <h3>{skill.name}</h3>
-                    </Col>
-                    <Col md="12">
-                        <br/>
-                        <ul>
+                    </Row>
+                    <Row>
+                        <ul className="split-list-3">
                             {list}
                         </ul>
-                    </Col>
+                    </Row>
                 </div>
             );
         });
@@ -42,9 +41,9 @@ export default class Skills extends Component {
                     <h2>Skills</h2>
                 </Row>
                 <hr/>
-                <Row className="row-content">
+                <div className="row-content">
                     {rows}
-                </Row>
+                </div>
             </Container>
         );
     }
