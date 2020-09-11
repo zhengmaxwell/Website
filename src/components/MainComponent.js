@@ -5,6 +5,7 @@ import Experiences from './ExperiencesComponent';
 import Skills from './SkillsComponent';
 import Contact from './ContactComponent';
 import Projects from './ProjectsComponent';
+import About from './AboutComponent';
 
 
 export default class Main extends Component {
@@ -13,6 +14,7 @@ export default class Main extends Component {
         return (
             <div>
                 <Header/>
+                <About/>
                 <Education/>
                 <Experiences/>
                 <Skills/>
