@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, Button, Modal, ModalHeader, ModalBody, ModalFooter, Card, CardImg, CardBody, CardTitle, CardText } from 'reactstrap';
 import { PROJECTS } from '../shared/projects';
 
 
@@ -8,8 +8,18 @@ export default class Projects extends Component {
     constructor(props) {
         super(props);
 
-        this.RenderProjects = this.RenderProjects.bind(this);
+        this.state = {
+            isModalOpen: false
+        }
 
+        this.toggleModal = this.toggleModal.bind(this);
+        this.RenderProjects = this.RenderProjects.bind(this);
+    }
+
+    toggleModal() {
+        this.setState({
+            isModalOpen: !this.state.isModalOpen
+        });
     }
 
     RenderProjects() {
@@ -20,7 +30,21 @@ export default class Projects extends Component {
                 <Row>
                     <Col md="6">
                         <div className="w-25 p-3">
-                            <li className="split-list-item"><img src={project.image} width="300"/></li>
+                            <li className="split-list-item"><Button onClick={this.toggleModal}><img src={project.image} width="300" height="300"/></Button></li>
+                            <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
+                                <ModalHeader toggle={this.toggleModal}>{project.name}</ModalHeader>
+                                <ModalBody>
+                                    <Card>
+                                        <CardImg src={project.image} alt="Chess"/>
+                                        <CardBody>
+                                            <CardTitle>Tools Used: {project.tools}</CardTitle>
+                                            <CardText>{project.description}</CardText>
+                                            <br/>
+                                            <Button href={project.link}>See Project</Button>
+                                        </CardBody>
+                                    </Card>
+                                </ModalBody>
+                            </Modal>
                         </div>
                     </Col>
                 </Row>

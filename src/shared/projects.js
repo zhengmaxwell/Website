@@ -1,31 +1,17 @@
 export const PROJECTS = 
 [
     {
-        name: '',
-        description: '',
-        tools: '',
+        name: 'Genre Classifier',
+        description: 'An RNN machine learning model that classifies novel genres based on the back of book description.',
+        tools: 'Pytorch, RNN',
         image: '/images/random.jpg',
-        link: ''
+        link: 'https://github.com/zhengmaxwell/Genre_Classifier'
     },
     {
-        name: '',
-        description: '',
-        tools: '',
+        name: 'Chess',
+        description: 'A chess engine with an AI player.',
+        tools: 'Python, C#, WPF',
         image: '/images/random.jpg',
-        link: ''
-    },
-    {
-        name: '',
-        description: '',
-        tools: '',
-        image: '/images/random.jpg',
-        link: ''
-    },
-    {
-        name: '',
-        description: '',
-        tools: '',
-        image: '/images/random.jpg',
-        link: ''
+        link: 'https://github.com/zhengmaxwell/Chess'
     }
 ]
