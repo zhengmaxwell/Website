@@ -47,7 +47,7 @@ export default class Education extends Component {
 
         return (
             <Container>
-                <Row className="justify-content-center">
+                <Row id="education" className="category justify-content-center">
                     <h2>Education</h2>
                 </Row>
                 <hr/>

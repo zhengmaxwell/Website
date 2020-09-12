@@ -8,11 +8,11 @@ export default class Contact extends Component {
         return (
             <div>
                 <Container>
-                    <Row className="justify-content-center">
+                    <Row className="category justify-content-center">
                         <h2>Contact Me</h2>
                     </Row>
                     <hr/>
-                    <Row className="row-content">
+                    <Row id="contact" className="row-content">
                         <Col md={{size: 10, offset: 1}}>
                             <ul className="split-list-2"> 
                                 <li className="split-list-item"><a href="https://linkedin.com/in/maxwell-zheng"><i className="fa fa-2x fa-linkedin-square"></i>&ensp;https://linkedin.com/in/maxwell-zheng</a></li>

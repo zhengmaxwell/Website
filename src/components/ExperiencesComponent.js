@@ -47,7 +47,7 @@ export default class Experiences extends Component {
 
         return (
             <Container>
-                <Row className="justify-content-center">
+                <Row id="experiences" className="category justify-content-center">
                     <h2>Experiences</h2>
                 </Row>
                  <hr/>

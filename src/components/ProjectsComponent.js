@@ -55,7 +55,7 @@ export default class Projects extends Component {
 
         return (
             <Container>
-                <Row className="justify-content-center">
+                <Row id="projects" className="category justify-content-center">
                     <h2>Projects</h2>
                 </Row>
                 <hr/>

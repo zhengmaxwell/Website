@@ -16,7 +16,7 @@ export default class About extends Component {
     RenderAbout() {
         return (
             <Container>
-                <Row className="justify-content-center">
+                <Row id="about" className="category justify-content-center">
                     <h2>About Me</h2>
                 </Row>
                 <hr/>
