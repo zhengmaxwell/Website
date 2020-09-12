@@ -14,13 +14,16 @@ export default class Main extends Component {
     render() {
         return (
             <div>
-                <Title/>
-                <About/>
-                <Education/>
-                <Experiences/>
-                <Skills/>
-                <Projects/>
-                <Contact/>
+                <StickyContainer>
+                    <Title/>
+                    <Header/>
+                    <About/>
+                    <Education/>
+                    <Experiences/>
+                    <Skills/>
+                    <Projects/>
+                    <Contact/>
+                </StickyContainer>
             </div>
         )
     }

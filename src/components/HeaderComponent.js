@@ -17,6 +17,7 @@ export default class Header extends Component {
         this.toggleDropdown = this.toggleDropdown.bind(this);
         this.mouseOverDropdown = this.mouseOverDropdown.bind(this);
         this.mouseLeaveDropdown = this.mouseLeaveDropdown.bind(this);
+        this.affixNav = this.affixNav.bind(this);
     }
 
     toggleNav() {
@@ -46,12 +47,44 @@ export default class Header extends Component {
             });
         }
     }
+    
+    affixNav() {
+        $(document).ready(function() {
+
+            var toggleAffix = function(affixElement, scrollElement, wrapper) {
+            
+                var height = affixElement.outerHeight();
+                var top = wrapper.offset().top;
+              
+                if (scrollElement.scrollTop() >= top){
+                    //wrapper.height(height);
+                    affixElement.addClass("sticky");
+                    affixElement.removeClass("hidden")
+                } else {
+                    affixElement.addClass("hidden");
+                    affixElement.removeClass("sticky");
+                    //wrapper.height('auto');
+              }
+            };
+            
+            $('[data-toggle="sticky"]').each(function() {
+                var ele = $(this);
+                var wrapper = $('<div></div>');
+                
+                ele.before(wrapper);
+                $(window).on('scroll resize', function() {
+                    toggleAffix(ele, $(this), wrapper);
+                });
+            });
+        });
+    }
 
     render() {
         
+        //{this.affixNav()}
         return (
-            <div>
-                <Navbar color="dark" expand="lg">
+            <React.Fragment>
+                <Navbar className="sticky" color="dark" expand="md" data-toggle="sticky">
                     <Container>
                         <NavbarToggler onClick={this.toggleNav}/>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
@@ -92,11 +125,8 @@ export default class Header extends Component {
                             </Nav>
                         </Collapse>
                     </Container>
-                </Navbar>
-                <Jumbotron>
-                    <h1 align="center">Maxwell Zheng</h1>
-                </Jumbotron>
-            </div>
+                </Navbar><br/>
+            </React.Fragment>
         )
     }
 }
