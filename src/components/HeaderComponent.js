@@ -81,10 +81,10 @@ export default class Header extends Component {
 
     render() {
         
-        //{this.affixNav()}
+        {this.affixNav()}
         return (
             <React.Fragment>
-                <Navbar className="sticky" color="dark" expand="md" data-toggle="sticky">
+                <Navbar color="dark" expand="md" data-toggle="sticky">
                     <Container>
                         <NavbarToggler onClick={this.toggleNav}/>
                         <Collapse isOpen={this.state.isNavOpen} navbar>

@@ -65,11 +65,13 @@ i {
 .sticky {
     position: sticky;
     top: 0;
+    visibility: visible;
     z-index: 10;
+    transition: all 0.3s ease-in-out;
 }
 
 .hidden {
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s, opacity 0.5s linear;
+    transition: all 0.3s ease-in-out;
 }
