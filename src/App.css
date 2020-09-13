@@ -36,19 +36,17 @@ ul {
 
 .split-list-2 {
     column-count: 2;
-    column-gap: 100px;
     margin: 0 auto;
 }
 
 .split-list-3 {
-    column-count: 3;
-    column-gap: 100px;
-    
+    column-count: 3; 
 }
 
 .split-list-item {
-    margin: 0 0 10px 0;
-    justify-content: space-between;
+margin: 0 0 10px 0;
+justify-content: space-between;
+min-width: 300px;
 }
 
 i {
