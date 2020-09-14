@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Jumbotron } from 'reactstrap';
+import { Container, Row, Col, Jumbotron, Button} from 'reactstrap';
 
 
 export default class Title extends Component {
@@ -11,6 +11,9 @@ export default class Title extends Component {
                     <Container>
                         <Row className="justify-content-center" style={{padding: '20% 0'}}>
                             <h1 className="title">Maxwell Zheng</h1>
+                        </Row>
+                        <Row>
+                            <a href="#navbar"><Button className="pulse-button"><i className="fa fa-3x fa-chevron-down"></i></Button></a>
                         </Row>
                     </Container>
                 </Jumbotron>

@@ -78,7 +78,7 @@ export default class Header extends Component {
         {this.affixNav()}
         return (
             <React.Fragment>
-                <Navbar color="dark" expand="md" data-toggle="sticky">
+                <Navbar id="navbar" color="dark" expand="md" data-toggle="sticky">
                     <Container>
                         <NavbarBrand href=".title">MZ</NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav}/>

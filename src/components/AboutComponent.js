@@ -19,6 +19,9 @@ export default class About extends Component {
                 <Row id="about" className="category justify-content-center">
                     <h2>About Me</h2>
                 </Row>
+                <Row className="justify-content-center">
+                    <h3>Always learning, always improving</h3>
+                </Row>
                 <hr/>
                 <div className="row-content">
                     <Row className="justify-content-center">
