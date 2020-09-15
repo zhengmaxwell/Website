@@ -32,7 +32,14 @@ export default class Projects extends Component {
                 <Row>
                     <Col>
                         <div className="w-25 p-3">
-                            <li className="split-list-item"><Button onClick={() => this.toggleModal(project.name)}><img src={project.image} width="200" height="200"/></Button></li>
+                                <li className="split-list-item">
+                                    <div className="click hover-container" onClick={() => this.toggleModal(project.name)}>
+                                        <img className="hover-image" src={project.image} width="200" height="200"/>
+                                        <div className="hover-text">
+                                            {project.name}
+                                        </div>
+                                    </div>
+                                </li>
                             <Modal isOpen={this.state[project.name]} toggle={() => this.toggleModal(project.name)} >
                                 <ModalHeader toggle={() => this.toggleModal(project.name)}>{project.name}</ModalHeader>
                                 <ModalBody>
@@ -66,7 +73,7 @@ export default class Projects extends Component {
                 </Row>
                 <Row>
                     <Col align="center">
-                        See my other projects
+                        See all my projects
                         <br/>
                         <a href="https://github.com/zhengmaxwell" target="_blank"><i className="fa fa-2x fa-github-square"></i>&ensp;https://github.com/zhengmaxwell</a>
                     </Col>
