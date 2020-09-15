@@ -35,9 +35,11 @@ ul {
     padding: 0;
 }
 
-.split-list-2 {
+@media only screen and (min-width: 992px) {
+    .split-list-2 {
     column-count: 2;
-    margin: 0 auto;
+    margin: 0 auto; 
+    }
 }
 
 .split-list-3 {
@@ -113,7 +115,7 @@ a:hover {
     
     70% {
         transform: scale(1);
-        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+        box-shadow: 0 0 0 50px rgba(0, 0, 0, 0);
     }
     
     100% {
