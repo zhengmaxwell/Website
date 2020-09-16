@@ -24,10 +24,10 @@ export default class Projects extends Component {
         });
     }
 
-    RenderProjects() {
+    RenderProjects(projects) {
         let rows = [];
 
-        PROJECTS.forEach(project => {
+        projects.forEach(project => {
             rows.push(
                 <Row>
                     <Col>
@@ -83,7 +83,7 @@ export default class Projects extends Component {
     render() {
         return (
             <div>
-                {this.RenderProjects()}
+                {this.RenderProjects(PROJECTS)}
             </div>
         );
     }

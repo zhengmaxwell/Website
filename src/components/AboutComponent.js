@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import ReactTextRotator from 'react-text-rotator';
-import TextLoop from 'react-text-loop';
 
 
 export default class About extends Component {

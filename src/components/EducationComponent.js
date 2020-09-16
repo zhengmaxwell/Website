@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import { EDUCATION } from '../shared/education';
+import { EDUCATIONS } from '../shared/education';
 
 
 export default class Education extends Component {
@@ -11,10 +11,10 @@ export default class Education extends Component {
         this.RenderEducation = this.RenderEducation.bind(this);
     }
 
-    RenderEducation() {
+    RenderEducation(educations) {
         let rows = [];
         
-        EDUCATION.forEach(education => {
+        educations.forEach(education => {
             let list = [];
             let points = education.description.split(". ");
             points.forEach(point => {
@@ -59,7 +59,7 @@ export default class Education extends Component {
     render() {
         return (
             <div>
-                {this.RenderEducation()}
+                {this.RenderEducation(EDUCATIONS)}
             </div>
         )
     }

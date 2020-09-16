@@ -1,4 +1,4 @@
-export const EDUCATION = 
+export const EDUCATIONS = 
 [
     {
         school: 'University of Toronto',

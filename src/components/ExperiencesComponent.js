@@ -14,9 +14,9 @@ export default class Experiences extends Component {
         this.RenderExperiences = this.RenderExperiences.bind(this);
     }
 
-    RenderExperiences() {
+    RenderExperiences(experiences) {
         let rows = [];
-        EXPERIENCES.forEach(experience => {
+        experiences.forEach(experience => {
             function Icon(props) {
                     return (
                         <div className="icon"><span className={`fa-2x ${experience.icon}`}></span></div>
@@ -50,7 +50,7 @@ export default class Experiences extends Component {
     render() {
         return (
             <div>
-                {this.RenderExperiences()}
+                {this.RenderExperiences(EXPERIENCES)}
             </div>
         )
     }

@@ -11,10 +11,10 @@ export default class Skills extends Component {
         this.RenderSkills = this.RenderSkills.bind(this);
     }
 
-    RenderSkills() {
+    RenderSkills(skills) {
         let rows = [];
         
-        SKILLS.forEach(skill => {
+        skills.forEach(skill => {
             let list = [];
             skill.list.forEach(item => {
                 list.push(
@@ -55,7 +55,7 @@ export default class Skills extends Component {
     render() {
         return (
             <div>
-                {this.RenderSkills()}
+                {this.RenderSkills(SKILLS)}
             </div>
         )
     }
