@@ -78,33 +78,43 @@ export default class Header extends Component {
         {this.affixNav()}
         return (
             <React.Fragment>
-                <Navbar id="navbar" color="dark" expand="md" data-toggle="sticky">
+                <Navbar id="navbar" color="info" expand="md" data-toggle="sticky">
                     <Container>
-                        <NavbarBrand href=".title">MZ</NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav}/>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
-                            <Nav navbar>
+                            <Nav className="bg-gradient-dark m-auto" navbar>
                                 <NavItem className="nav-link">
-                                    <NavLink href="#about">About Me</NavLink>
+                                    <NavLink className="text-light" style={{textAlign:"center"}} href="#about">
+                                        <span className="fas fa-user"></span><br/>About Me
+                                    </NavLink>
                                 </NavItem>
                                 <NavItem className="nav-link">
-                                    <NavLink href="#education">Education</NavLink>
+                                    <NavLink className="text-light" style={{textAlign:"center"}} href="#education">
+                                        <span className="fas fa-university"></span><br/>Education
+                                    </NavLink>
                                 </NavItem>
                                 <NavItem className="nav-link">
                                     <Dropdown className="d-inline-block" onMouseOver={this.mouseOverDropdown} onMouseLeave={this.mouseLeaveDropdown} isOpen={this.state.isDropdownOpen} toggle={this.toggleDropdown} nav inNavbar>
-                                        <DropdownToggle nav caret>Experience</DropdownToggle>
+                                        <DropdownToggle nav caret className="text-light" style={{textAlign:"center"}}>
+                                            <span className="fas fa-desktop"></span><br/>Experience
+                                        </DropdownToggle>
                                         <DropdownMenu className="dropdownMenu">
                                             <DropdownItem>
-                                                <NavLink href="#experiences">Industry</NavLink>
+                                                <NavLink href="#experiences"><span className="fas fa-robot"></span>&nbsp;Industry</NavLink>
                                             </DropdownItem>
                                             <DropdownItem>
-                                                <NavLink href="#projects">Projects</NavLink>
+                                                <NavLink href="#projects"><span className="fas fa-code"></span>&nbsp;Projects</NavLink>
+                                            </DropdownItem>
+                                            <DropdownItem>
+                                                <NavLink href="#skills"><span className="fas fa-tools"></span>&nbsp;Skills</NavLink>
                                             </DropdownItem>
                                         </DropdownMenu>
                                     </Dropdown>
                                 </NavItem>
                                 <NavItem className="nav-link">
-                                    <NavLink href="#contact">Contact Me</NavLink>
+                                    <NavLink className="text-light" style={{textAlign:"center"}} href="#contact">
+                                        <span className="fas fa-university"></span><br/>Contact Me
+                                    </NavLink>
                                 </NavItem>
                             </Nav>
                         </Collapse>

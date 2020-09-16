@@ -15,8 +15,8 @@ export default class Contact extends Component {
                     <Row id="contact" className="row-content">
                         <Col md={{size: 10, offset: 1}}>
                             <ul className="split-list-2"> 
-                                <li className="split-list-item"><a href="https://linkedin.com/in/maxwell-zheng" target="_blank"><i className="fa fa-2x fa-linkedin-square"></i>&ensp;https://linkedin.com/in/maxwell-zheng</a></li>
-                                <li className="split-list-item"><a href="mailto:zhengmaxwell@gmail.com"><i className="fa fa-2x fa-envelope"></i>&ensp;zhengmaxwell@gmail.com</a></li>
+                                <li className="split-list-item"><a href="https://linkedin.com/in/maxwell-zheng" target="_blank"><span className="fab fa-3x fa-linkedin-square"></span>&ensp;https://linkedin.com/in/maxwell-zheng</a></li>
+                                <li className="split-list-item"><a href="mailto:zhengmaxwell@gmail.com"><span className="fas fa-3x fa-envelope"></span>&ensp;zhengmaxwell@gmail.com</a></li>
                             </ul>
                         </Col>
                     </Row>

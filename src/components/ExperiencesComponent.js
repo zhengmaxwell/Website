@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 import { EXPERIENCES } from '../shared/experiences';
+import TrainIcon from '@material-ui/icons/Train';
 
 
 export default class Experiences extends Component {
@@ -13,36 +16,21 @@ export default class Experiences extends Component {
 
     RenderExperiences() {
         let rows = [];
-
         EXPERIENCES.forEach(experience => {
-            let list = [];
-            let points = experience.description.split(". ");
-            points.forEach(point => {
-                list.push(
-                    <li>{point}</li>
-                );
-            });
+            function Icon(props) {
+                    return (
+                        <div className="icon"><span className={`fa-2x ${experience.icon}`}></span></div>
+                    )
+            }
 
             rows.push(
-                <Row className="row-content">
-                    <Col md="4" s="12">
-                        <h3>{experience.company}</h3>
-                        <br/>
-                        <em>{experience.period}</em>
-                        <br/>
-                        <i className="fa fa-map-marker"></i> {experience.location}
-                    </Col>
-                    <Col>
-                        <h4>{experience.position}</h4>
-                        <br/>
-                        <div className="d-none d-md-block">
-                            <ul>
-                                {list}
-                            </ul>
-                        </div>
-                    </Col>
-                </Row>
-            );
+                <VerticalTimelineElement date={experience.period} iconStyle={{ background: '#5bc0de', color: '#fff' }} icon={<Icon/>}>
+                    <h3 className="vertical-timeline-element-title">{experience.position}</h3>
+                    <h4 className="vertical-timeline-element-subtitle">{experience.company}</h4>
+                    <div className="text-info"><i className="fa fa-map-marker"></i> {experience.location}</div>
+                    <p>{experience.description}</p>
+                </VerticalTimelineElement>
+            )
         });
 
         return (
@@ -51,11 +39,14 @@ export default class Experiences extends Component {
                     <h2>Experiences</h2>
                 </Row>
                  <hr/>
-                 {rows}
+                 <VerticalTimeline>
+                    {rows}
+                 </VerticalTimeline>
             </Container>
-        )
+        );
     }
 
+    
     render() {
         return (
             <div>

@@ -30,7 +30,7 @@ export default class Education extends Component {
                         <br/>
                         <em>{education.period}</em>
                         <br/>
-                        <i className="fa fa-map-marker"></i> {education.location}
+                        <div className="text-info"><i className="fa fa-map-marker"></i> {education.location}</div>
                     </Col>
                     <Col>
                         <h4>{education.degree}</h4>

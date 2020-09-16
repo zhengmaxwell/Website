@@ -49,7 +49,7 @@ export default class Projects extends Component {
                                             <CardTitle>Tools Used: {project.tools}</CardTitle>
                                             <CardText>{project.description}</CardText>
                                             <br/>
-                                            <Button href={project.link}>See Project</Button>
+                                            <Button href={project.link} target="_blank">See Project</Button>
                                         </CardBody>
                                     </Card>
                                 </ModalBody>
@@ -73,9 +73,7 @@ export default class Projects extends Component {
                 </Row>
                 <Row>
                     <Col align="center">
-                        See all my projects
-                        <br/>
-                        <a href="https://github.com/zhengmaxwell" target="_blank"><i className="fa fa-2x fa-github-square"></i>&ensp;https://github.com/zhengmaxwell</a>
+                        <a href="https://github.com/zhengmaxwell" target="_blank"><span className="fab fa-3x fa-github-square"></span>&ensp;https://github.com/zhengmaxwell</a>
                     </Col>
                 </Row>
             </Container>

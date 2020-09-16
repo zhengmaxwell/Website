@@ -16,12 +16,14 @@ export default class Main extends Component {
             <div>
                 <Title/>
                 <Header/>
-                <About/>
-                <Education/>
-                <Experiences/>
-                <Skills/>
-                <Projects/>
-                <Contact/>
+                <body>
+                    <About/>
+                    <Education/>
+                    <Experiences/>
+                    <Projects/>
+                    <Skills/>
+                    <Contact/>
+                </body>
             </div>
         )
     }

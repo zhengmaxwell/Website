@@ -24,12 +24,16 @@ export default class Skills extends Component {
             rows.push(
                 <div>
                     <Row>
-                        <h3>{skill.name}</h3>
+                        <Col>
+                            <h3>{skill.name}</h3>
+                        </Col>
                     </Row>
                     <Row>
-                        <ul className="split-list-3">
-                            {list}
-                        </ul>
+                        <Col>
+                            <ul className="split-list-3">
+                                {list}
+                            </ul>
+                        </Col>
                     </Row>
                 </div>
             );
@@ -37,7 +41,7 @@ export default class Skills extends Component {
 
         return (
             <Container>
-                <Row className="justify-content-center">
+                <Row id="skills" className="category justify-content-center">
                     <h2>Skills</h2>
                 </Row>
                 <hr/>

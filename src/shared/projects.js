@@ -10,7 +10,7 @@ export const PROJECTS =
     {
         name: 'Autonomous Car Charger',
         description: 'An electromechanical solution to autonomously charge an electric car.',
-        tools: 'C++, Python, Arduino, Raspberyy Pi, OpenCV, SolidWorks',
+        tools: 'C++, Python, Arduino, Raspberry Pi, OpenCV, SolidWorks',
         image: '/images/random.jpg',
         link: 'https://github.com/zhengmaxwell/Autonomous_Car_Charger'
     },
