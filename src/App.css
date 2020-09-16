@@ -80,7 +80,7 @@ span {
 }
 
 .category {
-    padding-top: 80px;
+    padding-top: 100px;
 }
 
 a {
@@ -100,16 +100,28 @@ a:hover {
     position: absolute;
     bottom: 0;
     border: 0;
-    background: black;
+    background: #5bc0de;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
     transform: scale(1);
     animation: pulse-black 2s infinite;
 }
 
+.pulse-button:hover {
+    background-color: white;
+    color: #5bc0de;
+    animation: none;
+}
+
+.pulse-button:focus {
+    background-color: #5bc0de;
+    color: white;
+    animation: none;
+}
+
 @keyframes pulse-black {
     0% {
         transform: scale(0.95);
-        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+        box-shadow: 0 0 0 0 #3bc0de;
     }
     
     70% {
@@ -128,7 +140,6 @@ a:hover {
     background-size: cover;
     background-position: center;
     height: 100vh;
-    width: 100vw;
     margin: 0;
 }
 

@@ -113,7 +113,7 @@ export default class Header extends Component {
                                 </NavItem>
                                 <NavItem className="nav-link">
                                     <NavLink className="text-light" style={{textAlign:"center"}} href="#contact">
-                                        <span className="fas fa-university"></span><br/>Contact Me
+                                        <span className="fas fa-at"></span><br/>Contact Me
                                     </NavLink>
                                 </NavItem>
                             </Nav>
