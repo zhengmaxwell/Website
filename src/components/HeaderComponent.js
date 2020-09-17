@@ -78,11 +78,11 @@ export default class Header extends Component {
         {this.affixNav()}
         return (
             <React.Fragment>
-                <Navbar id="navbar"  expand="md" data-toggle="sticky">
+                <Navbar id="navbar" expand="md" data-toggle="sticky">
                     <Container>
                         <NavbarToggler onClick={this.toggleNav}/>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
-                            <Nav className="bg-gradient-dark m-auto" navbar>
+                            <Nav className="m-auto" navbar>
                                 <NavItem className="nav-link">
                                     <NavLink className="text-light" style={{textAlign:"center"}} href="#about">
                                         <span className="fas fa-user"></span><br/>About Me
