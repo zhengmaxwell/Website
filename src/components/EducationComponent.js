@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import { Container, Row, Col } from 'reactstrap';
 import { EDUCATIONS } from '../shared/education';
 
@@ -15,34 +16,20 @@ export default class Education extends Component {
         let rows = [];
         
         educations.forEach(education => {
-            let list = [];
-            let points = education.description.split(". ");
-            points.forEach(point => {
-                list.push(
-                    <li>{point}</li>
+            function Icon(props) {
+                return (
+                    <div className="icon"><span className={`fa-2x ${education.icon}`}></span></div>
                 );
-            });
+            }
 
             rows.push(
-                <Row className="row-content">
-                    <Col md="4" s="12">
-                        <h3>{education.school}</h3>
-                        <br/>
-                        <em>{education.period}</em>
-                        <br/>
-                        <div className="text-info"><i className="fa fa-map-marker"></i> {education.location}</div>
-                    </Col>
-                    <Col>
-                        <h4>{education.degree}</h4>
-                        <br/>
-                        <div className="d-none d-md-block">
-                            <ul>
-                                {list}
-                            </ul>
-                        </div>
-                    </Col>
-                </Row>
-            )
+                <VerticalTimelineElement date={education.period} iconStyle={{ background: '#5bc0de', color: '#fff' }} icon={<Icon/>}>
+                    <h3 className="vertical-timeline-element-title">{education.school}</h3>
+                    <h4 className="vertical-timeline-element-subtitle">{education.degree}</h4>
+                    <div className="text-info"><i className="fa fa-map-marker"></i> {education.location}</div>
+                    <p>{education.description}</p>
+                </VerticalTimelineElement>
+            );
         });
 
         return (
@@ -51,9 +38,11 @@ export default class Education extends Component {
                     <h2>Education</h2>
                 </Row>
                 <hr/>
-                {rows}
+                <VerticalTimeline>
+                    {rows}
+                </VerticalTimeline>
             </Container>
-        )
+        );
     }
 
     render() {
