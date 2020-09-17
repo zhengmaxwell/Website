@@ -78,7 +78,7 @@ export default class Header extends Component {
         {this.affixNav()}
         return (
             <React.Fragment>
-                <Navbar id="navbar" color="info" expand="md" data-toggle="sticky">
+                <Navbar id="navbar"  expand="md" data-toggle="sticky">
                     <Container>
                         <NavbarToggler onClick={this.toggleNav}/>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
