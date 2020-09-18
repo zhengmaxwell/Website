@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import SimpleBar from 'simplebar-react';
 import Title from './TitleComponent';
 import Header from './HeaderComponent';
 import Education from './EducationComponent';
