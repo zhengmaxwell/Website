@@ -3,7 +3,6 @@ import { Container, Row, Col } from 'reactstrap';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { EXPERIENCES } from '../shared/experiences';
-import TrainIcon from '@material-ui/icons/Train';
 
 
 export default class Experiences extends Component {

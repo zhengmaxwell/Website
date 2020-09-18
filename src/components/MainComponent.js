@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import SimpleBar from 'simplebar-react';
 import Title from './TitleComponent';
 import Header from './HeaderComponent';
 import Education from './EducationComponent';
@@ -13,17 +14,19 @@ export default class Main extends Component {
 
     render() {
         return (
-            <div>
-                <Title/>
-                <Header/>
-                <body>
-                    <About/>
-                    <Education/>
-                    <Experiences/>
-                    <Projects/>
-                    <Skills/>
-                    <Contact/>
-                </body>
+            <div >
+
+                    <Title/>
+                    <Header/>
+                    <body className="asdf">
+                        <About/>
+                        <Education/>
+                        <Experiences/>
+                        <Projects/>
+                        <Skills/>
+                        <Contact/>
+                    </body>
+
             </div>
         )
     }

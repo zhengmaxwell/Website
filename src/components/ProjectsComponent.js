@@ -31,10 +31,10 @@ export default class Projects extends Component {
             rows.push(
                 <Row>
                     <Col>
-                        <div className="w-25 p-3">
+                        <div className="w-50 p-10">
                                 <li className="split-list-item">
                                     <div className="click hover-container" onClick={() => this.toggleModal(project.name)}>
-                                        <img className="hover-image" src={project.image} width="200" height="200"/>
+                                        <img className="hover-image" src={project.image}/>
                                         <div className="hover-text">
                                             {project.name}
                                         </div>
@@ -66,10 +66,12 @@ export default class Projects extends Component {
                     <h2>Projects</h2>
                 </Row>
                 <hr/>
-                <Row className="row-content">
-                    <ul className="split-list-2">
-                        {rows}
-                    </ul>
+                <Row className="row-content ">
+                    <Col className="justify-content-center">
+                        <ul className="split-list-2">
+                            {rows}
+                        </ul>
+                    </Col>
                 </Row>
                 <Row>
                     <Col align="center">
