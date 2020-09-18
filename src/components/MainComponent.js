@@ -14,19 +14,17 @@ export default class Main extends Component {
     render() {
         return (
             <div >
-
-                    <Title/>
-                    <Header/>
-                    <body className="asdf">
-                        <About/>
-                        <Education/>
-                        <Experiences/>
-                        <Projects/>
-                        <Skills/>
-                        <Contact/>
-                    </body>
-
+                <Title/>
+                <Header/>
+                <body className="asdf">
+                    <About/>
+                    <Education/>
+                    <Experiences/>
+                    <Projects/>
+                    <Skills/>
+                    <Contact/>
+                </body>
             </div>
-        )
+        );
     }
 }

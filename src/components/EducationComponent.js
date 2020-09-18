@@ -2,12 +2,18 @@ import React, { Component } from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import { Container, Row, Col } from 'reactstrap';
 import { EDUCATIONS } from '../shared/education';
+import variables from '../App.scss';
 
 
 export default class Education extends Component {
 
     constructor(props) {
         super(props);
+
+        this.iconColour = {
+            background: variables.iconBackground,
+            color: variables.iconForeground
+        };
 
         this.RenderEducation = this.RenderEducation.bind(this);
     }
@@ -23,10 +29,10 @@ export default class Education extends Component {
             }
 
             rows.push(
-                <VerticalTimelineElement date={education.period} iconStyle={{ background: '#5bc0de', color: '#fff' }} icon={<Icon/>}>
-                    <h3 className="vertical-timeline-element-title">{education.school}</h3>
-                    <h4 className="vertical-timeline-element-subtitle">{education.degree}</h4>
-                    <div className="text-info"><i className="fa fa-map-marker"></i> {education.location}</div>
+                <VerticalTimelineElement date={education.period} iconStyle={this.iconColour} icon={<Icon/>}>
+                    <h4 className="vertical-timeline-element-title">{education.school}</h4>
+                    <h5 className="vertical-timeline-element-subtitle">{education.degree}</h5>
+                    <div className="location"><i className="fa fa-map-marker"></i> {education.location}</div>
                     <p>{education.description}</p>
                 </VerticalTimelineElement>
             );

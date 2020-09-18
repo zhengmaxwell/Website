@@ -27,13 +27,15 @@ export default class Header extends Component {
     }
 
     toggleDropdown() {
-        this.setState({
-            isDropdownOpen: !this.state.isDropdownOpen
-        });
+        if ($(window).width() < 1200) {
+            this.setState({
+                isDropdownOpen: !this.state.isDropdownOpen
+            });
+        }
     }
 
     mouseOverDropdown() {
-        if ($(window).width() > 1200){
+        if ($(window).width() > 1200) {
             this.setState({
                 isDropdownOpen: true
             });
@@ -41,7 +43,7 @@ export default class Header extends Component {
     }
 
     mouseLeaveDropdown() {
-        if ($(window).width() > 1200){
+        if ($(window).width() > 1200) {
             this.setState({
                 isDropdownOpen: false
             });
@@ -99,14 +101,14 @@ export default class Header extends Component {
                                             <span className="fas fa-desktop"></span><br/>Experience
                                         </DropdownToggle>
                                         <DropdownMenu className="dropdownMenu">
-                                            <DropdownItem>
-                                                <NavLink href="#experiences"><span className="fas fa-robot"></span>&nbsp;Industry</NavLink>
+                                            <DropdownItem className="dropdown-button-row">
+                                                <NavLink className="dropdown-button" href="#experiences"><span className="fas fa-robot"></span>&nbsp;Industry</NavLink>
                                             </DropdownItem>
-                                            <DropdownItem>
-                                                <NavLink href="#projects"><span className="fas fa-code"></span>&nbsp;Projects</NavLink>
+                                            <DropdownItem className="dropdown-button-row">
+                                                <NavLink className="dropdown-button" href="#projects"><span className="fas fa-code"></span>&nbsp;Projects</NavLink>
                                             </DropdownItem>
-                                            <DropdownItem>
-                                                <NavLink href="#skills"><span className="fas fa-tools"></span>&nbsp;Skills</NavLink>
+                                            <DropdownItem className="dropdown-button-row">
+                                                <NavLink className="dropdown-button" href="#skills"><span className="fas fa-tools"></span>&nbsp;Skills</NavLink>
                                             </DropdownItem>
                                         </DropdownMenu>
                                     </Dropdown>

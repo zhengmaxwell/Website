@@ -25,7 +25,7 @@ export default class Skills extends Component {
                 <div>
                     <Row>
                         <Col>
-                            <h3>{skill.name}</h3>
+                            <h4>{skill.name}</h4>
                         </Col>
                     </Row>
                     <Row>

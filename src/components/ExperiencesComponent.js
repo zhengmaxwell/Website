@@ -3,12 +3,18 @@ import { Container, Row, Col } from 'reactstrap';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { EXPERIENCES } from '../shared/experiences';
+import variables from '../App.scss';
 
 
 export default class Experiences extends Component {
 
     constructor(props) {
         super(props);
+
+        this.iconColour = {
+            background: variables.iconBackground,
+            color: variables.iconForeground
+        };
 
         this.RenderExperiences = this.RenderExperiences.bind(this);
     }
@@ -23,10 +29,10 @@ export default class Experiences extends Component {
             }
 
             rows.push(
-                <VerticalTimelineElement date={experience.period} iconStyle={{ background: '#5bc0de', color: '#fff' }} icon={<Icon/>}>
-                    <h3 className="vertical-timeline-element-title">{experience.position}</h3>
-                    <h4 className="vertical-timeline-element-subtitle">{experience.company}</h4>
-                    <div className="text-info"><i className="fa fa-map-marker"></i> {experience.location}</div>
+                <VerticalTimelineElement date={experience.period} iconStyle={this.iconColour} icon={<Icon/>}>
+                    <h4 className="vertical-timeline-element-title">{experience.company}</h4>
+                    <h5 className="vertical-timeline-element-subtitle">{experience.position}</h5>
+                    <div className="location"><i className="fa fa-map-marker"></i> {experience.location}</div>
                     <p>{experience.description}</p>
                 </VerticalTimelineElement>
             )

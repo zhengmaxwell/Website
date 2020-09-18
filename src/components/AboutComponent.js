@@ -30,7 +30,7 @@ export default class About extends Component {
                     <h2>About Me</h2>
                 </Row>
                 <Row className="justify-content-center" style={{fontSize: '20px'}}>
-                    <ReactTextRotator content={this.subtitle} time={5000}/>
+                    <h3><ReactTextRotator content={this.subtitle} time={5000}/></h3>
                 </Row>
                 <hr/>
                 <div className="row-content">

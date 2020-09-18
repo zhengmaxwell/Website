@@ -25,7 +25,7 @@ export const EXPERIENCES =
                         Developed a new GUI to standardize company-wide internal metrics using HTML, CSS, and JS'
     },
     {
-        company: 'UofT IBBME',
+        company: 'Institute of Biomaterials and Biomedical Engineering',
         position: 'Biomedical Engineering Research Intern',
         location: 'Toronto, Ontario',
         icon: 'fas fa-dna',

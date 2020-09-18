@@ -41,7 +41,7 @@ export default class Projects extends Component {
                                     </div>
                                 </li>
                             <Modal isOpen={this.state[project.name]} toggle={() => this.toggleModal(project.name)} >
-                                <ModalHeader toggle={() => this.toggleModal(project.name)}>{project.name}</ModalHeader>
+                                <ModalHeader toggle={() => this.toggleModal(project.name)}><h4>{project.name}</h4></ModalHeader>
                                 <ModalBody>
                                     <Card>
                                         <CardImg src={project.image} alt="Chess"/>
@@ -49,7 +49,7 @@ export default class Projects extends Component {
                                             <CardTitle>Tools Used: {project.tools}</CardTitle>
                                             <CardText>{project.description}</CardText>
                                             <br/>
-                                            <Button href={project.link} target="_blank">See Project</Button>
+                                            <Button className="modal-button" href={project.link} target="_blank">See Project</Button>
                                         </CardBody>
                                     </Card>
                                 </ModalBody>
@@ -75,7 +75,7 @@ export default class Projects extends Component {
                 </Row>
                 <Row>
                     <Col align="center">
-                        <a href="https://github.com/zhengmaxwell" target="_blank"><span className="fab fa-3x fa-github-square"></span>&ensp;https://github.com/zhengmaxwell</a>
+                        <a className="link" href="https://github.com/zhengmaxwell" target="_blank"><span className="fab fa-3x fa-github-square"></span>&ensp;https://github.com/zhengmaxwell</a>
                     </Col>
                 </Row>
             </Container>
