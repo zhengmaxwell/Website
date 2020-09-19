@@ -29,34 +29,29 @@ export default class Projects extends Component {
 
         projects.forEach(project => {
             rows.push(
-                <Row>
-                    <Col>
-                        <div className="w-50 p-10">
-                                <li className="split-list-item">
-                                    <div className="click hover-container" onClick={() => this.toggleModal(project.name)}>
-                                        <img className="hover-image" src={project.image}/>
-                                        <div className="hover-text">
-                                            {project.name}
-                                        </div>
-                                    </div>
-                                </li>
-                            <Modal isOpen={this.state[project.name]} toggle={() => this.toggleModal(project.name)} >
-                                <ModalHeader toggle={() => this.toggleModal(project.name)}><h4>{project.name}</h4></ModalHeader>
-                                <ModalBody>
-                                    <Card>
-                                        <CardImg src={project.image} alt="Chess"/>
-                                        <CardBody>
-                                            <CardTitle>Tools Used: {project.tools}</CardTitle>
-                                            <CardText>{project.description}</CardText>
-                                            <br/>
-                                            <Button className="modal-button" href={project.link} target="_blank">See Project</Button>
-                                        </CardBody>
-                                    </Card>
-                                </ModalBody>
-                            </Modal>
+                <div>
+                    <div className="click hover-container" onClick={() => this.toggleModal(project.name)}>
+                        <img className="hover-image" src={project.image}/>
+                        <div className="hover-text">
+                            {project.name}
                         </div>
-                    </Col>
-                </Row>
+                    </div>
+
+                    <Modal isOpen={this.state[project.name]} toggle={() => this.toggleModal(project.name)} >
+                        <ModalHeader toggle={() => this.toggleModal(project.name)}><h4>{project.name}</h4></ModalHeader>
+                        <ModalBody>
+                            <Card>
+                                <CardImg src={project.image} alt="Chess"/>
+                                <CardBody>
+                                    <CardTitle><h5>Tools Used: {project.tools}</h5></CardTitle>
+                                    <CardText>{project.description}</CardText>
+                                    <br/>
+                                    <Button className="modal-button" href={project.link} target="_blank">See Project</Button>
+                                </CardBody>
+                            </Card>
+                        </ModalBody>
+                    </Modal>
+                </div>
             );
         });
 
@@ -66,13 +61,10 @@ export default class Projects extends Component {
                     <h2>Projects</h2>
                 </Row>
                 <hr/>
-                <Row className="row-content ">
-                    <Col className="justify-content-center">
-                        <ul className="split-list-2">
-                            {rows}
-                        </ul>
-                    </Col>
+                <Row className="justify-content-center">
+                    {rows}
                 </Row>
+                <br/><br/>
                 <Row>
                     <Col align="center">
                         <a className="link" href="https://github.com/zhengmaxwell" target="_blank"><span className="fab fa-3x fa-github-square"></span>&ensp;https://github.com/zhengmaxwell</a>
