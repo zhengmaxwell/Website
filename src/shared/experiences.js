@@ -28,7 +28,7 @@ export const EXPERIENCES =
         location: 'Toronto, Ontario',
         icon: 'fas fa-dna',
         period: 'April 2019 - August 2019',
-        description: 'I learned and applied wet laboratory skills under the supervision of Dr. Leo Chou. I used molecular and cellular engineering techquies to \
+        description: 'I learned and applied wet laboratory skills under the supervision of Dr. Leo Chou. I used molecular and cellular engineering techniques to \
                         conduct various tests using PCR and Gel Electrophoresis to sythesize and analyze DNA'
     }
 ]
