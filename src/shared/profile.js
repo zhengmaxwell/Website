@@ -1,6 +1,6 @@
 export const PROFILE = 
 {
-    description: 'I am young man who to my parents dismay has not chosen to become a medical doctor. Instead, I aspire to make an impact \
+    description: 'I am a young man who to my parents dismay has not chosen to become a medical doctor. Instead, I aspire to make an impact \
                     without ever having to charge someone for a slip of paper with my signature detailing why so and so could not write their exam today due to their phantom illness. \
                     I am incredibly passionate about sustainability. I believe that issues about the environment, energy shortages, and waste mangement will be the big problem of this generation.\
                     Furthermore, I am deeply interested in the intersectionality between humankind and computers. Through my studies in robotics engineering, I am often met with challenges \
