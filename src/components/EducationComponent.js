@@ -19,6 +19,7 @@ export default class Education extends Component {
     }
 
     RenderEducation(educations) {
+        let words = [];
         let rows = [];
         
         educations.forEach(education => {

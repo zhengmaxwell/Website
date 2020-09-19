@@ -6,7 +6,9 @@ export const EDUCATIONS =
         location: 'Toronto, Ontario',
         period: '2018 - 2022',
         icon: 'fas fa-graduation-cap',
-        description: 'Specialization in Robotics Engineering. Double minor in Artificial Intelligence and Engineering Business'
+        description: `I am specializing in Robotics Engineering whilst pursuing a double minor in Artificial Intelligence and Engineering Business. \
+                        I have participated in the University of Toronto Aerospace Team as a Rocket Propulsion Engineer.\
+                        Interesting courses I have taken include, Digital Logic, Robotic Design, Machine Learning, and Computational Linguistics.`
     },
     {
         school: 'Georgetown District High School',
@@ -14,6 +16,8 @@ export const EDUCATIONS =
         location: 'Georgetown, Ontario',
         period: '2014 - 2018',
         icon: 'fas fa-school',
-        description: 'Governor General\'s Medal Recipient'
+        description: 'I was a very well rounded student that participated in a plethora of different activies. I was part of sports teams, drama clubs, trivia competitions, \
+                        business competitions, health competitions, and math competitions. Academics wise, I worked hard for the subject awards in English, French, History, and Biology. \
+                        Upon graduation, I was awarded the Governor General\'s Medal which recognizes the graduating student with the highest average.'
     }
 ]
