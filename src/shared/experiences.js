@@ -9,7 +9,7 @@ export const EXPERIENCES =
         description: 'My second engineering internship was seemingly at the same company as my first, however, BT shares the same parent company (Bombardier Inc.) with BA \
                         but should not be confused as the same company. I worked with the Rail Control and Solutions Team to manage train communications on the Wuhu and Cairo Monorails. \
                         I supported the development of the Train Management System which oversees all the signals on the train. I implemented applications to track these signals \
-                        and created automated regressions tests.'
+                        and created automated regressions tests. BT has since been bought by Alstom. Seems my former employers always get bought out. '
     },
     {
         company: 'BOMBARDIER Aviation',
@@ -19,7 +19,8 @@ export const EXPERIENCES =
         period: 'April 2019 - August 2019',
         description: 'This was my very first engineering internship in university. I thoroughly enjoyed going to work in the morning and seeing many large airplanes. \
                         I had the opportunity to work on the Global 7500 Business Aircraft with the Change Management Team. \
-                        I was responsible for automating daily tasks and analyzing data to ensure that aircraft production was on track.'
+                        I was responsible for automating daily tasks and analyzing data to ensure that aircraft production was on track. \
+                        BA has since been bought by Airbus.'
     },
     {
         company: 'Institute of Biomaterials and Biomedical Engineering',
