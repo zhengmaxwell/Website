@@ -133,19 +133,19 @@ span {
 }
 
 .dropdown-button-row {
-    background-color: white;
+    background-color: white !important; 
 }
 
 .dropdown-button-row:hover {
-    background-color: $primary-colour#{'cc'};
+    background-color: $primary-colour#{'cc'} !important;
 }
 
 .dropdown-button {
-    color: $primary-colour;
+    color: $primary-colour !important;
 }
 
 .dropdown-button:hover {
-    color: white;
+    color: white !important;
 }
 
 .category {
@@ -175,16 +175,23 @@ span {
     transform: translateX(-50%) translateY(-50%);
 }
 
+.split-list-3 {
+    column-count: 2;
+    margin: 0 auto;
+}
+
 @media only screen and (min-width: 992px) {
     .split-list-2 {
         column-count: 2;
         margin: 0 auto; 
     }
+    .split-list-3 {
+        column-count: 3; 
+        margin: 0 auto;
+    }
 }
 
-.split-list-3 {
-    column-count: 3; 
-}
+
 
 .split-list-item {
     margin: 0 0 10px 0;
