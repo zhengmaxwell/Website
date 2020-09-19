@@ -13,29 +13,34 @@ $background-colour: #fffaf0;
     scroll-behavior: smooth;
 }
 
+p {
+    font-size: 1.5em;
+    line-height: 200%;
+}
+
 h1 {
-    font-size: 50px;
+    font-size: 10em !important;
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 4em;
     font-weight: bold;
     color: $primary-colour;
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 2em;
     color: $secondary-colour;
 }
 
 h4 {
-    font-size: 20px;
+    font-size: 2em;
     font-weight: bold;
     color: $secondary-colour;
 }
 
 h5 {
-    font-size: 15px;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
@@ -54,6 +59,7 @@ span {
 }
 
 .link {
+    font-size: 20px !important;
     color:$secondary-colour;
 }
 
@@ -68,7 +74,7 @@ span {
 }
 
 .title-img {
-    background-image: url(/images/random.jpg);
+    background-image: url(/images/toronto.jfif);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -183,6 +189,7 @@ span {
 @media only screen and (min-width: 992px) {
     .split-list-2 {
         column-count: 2;
+        width: 50vw;
         margin: 0 auto; 
     }
     .split-list-3 {
@@ -191,12 +198,10 @@ span {
     }
 }
 
-
-
 .split-list-item {
+    font-size: 1.5em;
     margin: 0 0 10px 0;
     justify-content: space-between;
-    min-width: 300px;
 }
 
 .hover-container {
@@ -240,7 +245,6 @@ span {
 }
 
 .modal-button {
-    outline: 5px green;
     color: white;
     background-color: $primary-colour;
     box-shadow: none;
@@ -252,8 +256,8 @@ span {
 }
 
 .modal-button:hover:active {
-    color: $primary-colour;
-    background-color: white;
+    color: $primary-colour !important; 
+    background-color: white !important;
 }
 
 #navbar {
