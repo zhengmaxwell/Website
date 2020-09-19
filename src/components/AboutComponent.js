@@ -29,7 +29,7 @@ export default class About extends Component {
                     <Row>
                         <Col md={{size:10, offset:1}}>
                             <br/>
-                            {profile.description}
+                            <p>{profile.description}</p>
                         </Col>
                     </Row>
                 </div>

@@ -65,10 +65,8 @@ export default class Projects extends Component {
                     {rows}
                 </Row>
                 <br/><br/>
-                <Row>
-                    <Col align="center">
-                        <a className="link" href="https://github.com/zhengmaxwell" target="_blank"><span className="fab fa-3x fa-github-square"></span>&ensp;https://github.com/zhengmaxwell</a>
-                    </Col>
+                <Row className="justify-content-center">
+                    <a className="link" href="https://github.com/zhengmaxwell" target="_blank"><span className="fab fa-3x fa-github-square"></span>&ensp;https://github.com/zhengmaxwell</a>
                 </Row>
             </Container>
         );

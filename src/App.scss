@@ -19,8 +19,17 @@ p {
 }
 
 h1 {
-    font-size: 10em !important;
+    text-align: center;
 }
+
+@media only screen and (min-width: 992px) {
+    h1 {
+        font-size: 10em !important;
+        text-align: center;
+    } 
+}
+
+
 
 h2 {
     font-size: 4em;
@@ -61,6 +70,8 @@ span {
 .link {
     font-size: 20px !important;
     color:$secondary-colour;
+    margin: 30px;
+    text-align: center;
 }
 
 .link:hover {
@@ -189,8 +200,6 @@ span {
 @media only screen and (min-width: 992px) {
     .split-list-2 {
         column-count: 2;
-        width: 50vw;
-        margin: 0 auto; 
     }
     .split-list-3 {
         column-count: 3; 
@@ -206,6 +215,7 @@ span {
 
 .hover-container {
     position: relative;
+    margin: 10px;
 }
 
 .hover-image {
