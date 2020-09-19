@@ -8,7 +8,7 @@ export const EDUCATIONS =
         icon: 'fas fa-graduation-cap',
         description: `I am specializing in Robotics Engineering whilst pursuing a double minor in Artificial Intelligence and Engineering Business. \
                         I have participated in the University of Toronto Aerospace Team as a Rocket Propulsion Engineer.\
-                        Interesting courses I have taken include, Digital Logic, Robotic Design, Machine Learning, and Computational Linguistics.`
+                        Interesting courses I have taken include: Digital Logic, Robotic Design, Machine Learning, and Computational Linguistics.`
     },
     {
         school: 'Georgetown District High School',
