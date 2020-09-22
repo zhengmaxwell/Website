@@ -192,6 +192,10 @@ span {
     transform: translateX(-50%) translateY(-50%);
 }
 
+.timeline-summaries {
+    font-size: 1.2em !important;
+}
+
 .split-list-3 {
     column-count: 2;
     margin: 0 auto;
@@ -216,6 +220,7 @@ span {
 .hover-container {
     position: relative;
     margin: 10px;
+    border: 1px solid black;
 }
 
 .hover-image {

@@ -34,7 +34,7 @@ export default class Education extends Component {
                     <h4 className="vertical-timeline-element-title">{education.school}</h4>
                     <h5 className="vertical-timeline-element-subtitle">{education.degree}</h5>
                     <div className="location"><i className="fa fa-map-marker"></i> {education.location}</div>
-                    <p>{education.description}</p>
+                    <p className="timeline-summaries">{education.description}</p>
                 </VerticalTimelineElement>
             );
         });
