@@ -275,6 +275,14 @@ span {
     background-color: white !important;
 }
 
+.tool-badge {
+    display: inline;
+}
+
+.badge-colour {
+    background-color: $primary-colour;
+}
+
 #navbar {
     text-align: center;
     background-color: $primary-colour#{'cc'};

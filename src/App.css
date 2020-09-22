@@ -216,6 +216,12 @@ span {
   color: #5bc0de !important;
   background-color: white !important; }
 
+.tool-badge {
+  display: inline; }
+
+.badge-colour {
+  background-color: #5bc0de; }
+
 #navbar {
   text-align: center;
   background-color: #5bc0decc;

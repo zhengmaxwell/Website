@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Button, Modal, ModalHeader, ModalBody, ModalFooter, Card, CardImg, CardBody, CardTitle, CardText } from 'reactstrap';
+import { Container, Row, Col, Button, Modal, ModalHeader, ModalBody, ModalFooter, Card, CardImg, CardBody, CardTitle, CardText, Badge } from 'reactstrap';
 import { PROJECTS } from '../shared/projects';
 
 
@@ -28,6 +28,15 @@ export default class Projects extends Component {
         let rows = [];
 
         projects.forEach(project => {
+            let tools = [];
+            project.tools.forEach(tool => {
+                tools.push(
+                    <div className="tool-badge">
+                        <h5 className="tool-badge"><Badge className="badge-colour">{tool}</Badge></h5>&nbsp;
+                    </div>
+                );
+            });
+
             rows.push(
                 <div>
                     <div className="click hover-container" onClick={() => this.toggleModal(project.name)}>
@@ -43,7 +52,7 @@ export default class Projects extends Component {
                             <Card>
                                 <CardImg src={project.image} alt="Chess"/>
                                 <CardBody>
-                                    <CardTitle><h5>Tools Used: {project.tools}</h5></CardTitle>
+                                    <CardTitle>{tools}</CardTitle>
                                     <CardText>{project.description}</CardText>
                                     <br/>
                                     <Button className="modal-button" href={project.link} target="_blank">See Project</Button>
