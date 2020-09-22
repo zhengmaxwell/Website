@@ -242,6 +242,11 @@ span {
     transition: .5s ease;
 }
 
+.hover-container:hover {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    transform: scale(1.02);
+}
+
 .hover-container:hover .hover-image {
     opacity: 0.3;
 }
