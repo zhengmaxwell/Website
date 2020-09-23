@@ -204,6 +204,7 @@ span {
   cursor: pointer; }
 
 .modal-button {
+  font-size: 1.2em;
   color: white;
   background-color: #23b4be;
   box-shadow: none; }
