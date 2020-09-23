@@ -14,11 +14,6 @@ $background-colour: #fffaf0;
     scroll-behavior: smooth;
 }
 
-p {
-    font-size: 1.5em;
-    line-height: 200%;
-}
-
 h1 {
     text-align: center;
 }
@@ -169,6 +164,11 @@ span {
     min-height:200px;
 }
 
+.profile {
+    font-size: 1.5em;
+    line-height: 200%;
+}
+
 .location {
     color: $primary-colour;
 }
@@ -258,6 +258,12 @@ span {
     cursor: pointer;
 }
 
+.modal-header {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: $primary-colour !important;
+}
+
 .modal-button {
     font-size: 1.2em;
     color: white;
@@ -276,11 +282,16 @@ span {
 }
 
 .tool-badge {
+    font-size: 1.1em;
     display: inline;
 }
 
 .badge-colour {
-    background-color: $primary-colour;
+    background-color: $secondary-colour;
+}
+
+.modal-description {
+    font-size: 1.2em;
 }
 
 #navbar {

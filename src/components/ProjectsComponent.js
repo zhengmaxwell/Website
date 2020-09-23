@@ -47,13 +47,13 @@ export default class Projects extends Component {
                     </div>
 
                     <Modal isOpen={this.state[project.name]} toggle={() => this.toggleModal(project.name)} >
-                        <ModalHeader toggle={() => this.toggleModal(project.name)}><h4>{project.name}</h4></ModalHeader>
+                        <ModalHeader toggle={() => this.toggleModal(project.name)}><div className="modal-header">{project.name}</div></ModalHeader>
                         <ModalBody>
                             <Card>
                                 <CardImg src={project.image} alt="Chess"/>
                                 <CardBody>
                                     <CardTitle>{tools}</CardTitle>
-                                    <CardText>{project.description}</CardText>
+                                    <CardText className="modal-description">{project.description}</CardText>
                                     <br/>
                                     <Button className="modal-button" href={project.link} target="_blank">See Project</Button>
                                 </CardBody>

@@ -33,7 +33,7 @@ export default class Experiences extends Component {
                     <h4 className="vertical-timeline-element-title">{experience.company}</h4>
                     <h5 className="vertical-timeline-element-subtitle">{experience.position}</h5>
                     <div className="location"><i className="fa fa-map-marker"></i> {experience.location}</div>
-                    <p className="timeline-summaries">{experience.description}</p>
+                    <div className="timeline-summaries" dangerouslySetInnerHTML={{__html: experience.description}}/>
                 </VerticalTimelineElement>
             )
         });

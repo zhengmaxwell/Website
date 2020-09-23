@@ -7,10 +7,6 @@
   font-family: Calibri, sans-serif;
   scroll-behavior: smooth; }
 
-p {
-  font-size: 1.5em;
-  line-height: 200%; }
-
 h1 {
   text-align: center; }
 
@@ -130,6 +126,10 @@ span {
   padding: 50px 0px 50px 0px;
   min-height: 200px; }
 
+.profile {
+  font-size: 1.5em;
+  line-height: 200%; }
+
 .location {
   color: #23b4be; }
 
@@ -203,6 +203,11 @@ span {
 .click {
   cursor: pointer; }
 
+.modal-header {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #23b4be !important; }
+
 .modal-button {
   font-size: 1.2em;
   color: white;
@@ -218,10 +223,14 @@ span {
   background-color: white !important; }
 
 .tool-badge {
+  font-size: 1.1em;
   display: inline; }
 
 .badge-colour {
-  background-color: #23b4be; }
+  background-color: #ca8317; }
+
+.modal-description {
+  font-size: 1.2em; }
 
 #navbar {
   text-align: center;
