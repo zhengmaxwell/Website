@@ -30,8 +30,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "gh-pages" : "gh-pages -d build",
-    "deploy": "npm-run-all -p build gh-pages"
+    "pages" : "gh-pages -d build",
+    "deploy": "npm-run-all -p build pages"
   },
   "eslintConfig": {
     "extends": "react-app"
