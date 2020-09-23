@@ -1,4 +1,5 @@
 $primary-colour: #5bc0de;
+$primary-colour: #23b4be;
 $secondary-colour: rgb(202, 131, 23);
 $background-colour: #fffaf0;
 
@@ -28,8 +29,6 @@ h1 {
         text-align: center;
     } 
 }
-
-
 
 h2 {
     font-size: 4em;
@@ -85,7 +84,7 @@ span {
 }
 
 .title-img {
-    background-image: url(/images/toronto.jfif);
+    background-image: url(/images/beach.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -96,28 +95,23 @@ span {
     position: absolute;
     bottom: 0;
     border: 0;
-    background: $primary-colour;
+    color: $primary-colour;
+    background-color: white;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
     transform: scale(1);
     animation: pulse 2s infinite;
 }
 
 .pulse-button:hover {
-    background-color: white;
-    color: $primary-colour;
-    animation: none;
-}
-
-.pulse-button:focus {
-    background-color: $primary-colour;
     color: white;
+    background-color: $primary-colour;
     animation: none;
 }
 
 @keyframes pulse {
     0% {
         transform: scale(0.95);
-        box-shadow: 0 0 0 0 $primary-colour;
+        box-shadow: 0 0 0 0 white;
     }
     
     70% {

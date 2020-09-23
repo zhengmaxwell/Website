@@ -1,5 +1,5 @@
 :export {
-  iconBackground: #5bc0de;
+  iconBackground: #23b4be;
   iconForeground: white; }
 
 * {
@@ -22,7 +22,7 @@ h1 {
 h2 {
   font-size: 4em;
   font-weight: bold;
-  color: #5bc0de; }
+  color: #23b4be; }
 
 h3 {
   font-size: 2em;
@@ -56,14 +56,14 @@ span {
 
 .link:hover {
   text-decoration: none;
-  color: #5bc0de; }
+  color: #23b4be; }
 
 .title {
   font-size: 100px;
   color: white; }
 
 .title-img {
-  background-image: url(/images/toronto.jfif);
+  background-image: url(/images/beach.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -73,25 +73,21 @@ span {
   position: absolute;
   bottom: 0;
   border: 0;
-  background: #5bc0de;
+  color: #23b4be;
+  background-color: white;
   box-shadow: 0 0 0 0 black;
   transform: scale(1);
   animation: pulse 2s infinite; }
 
 .pulse-button:hover {
-  background-color: white;
-  color: #5bc0de;
-  animation: none; }
-
-.pulse-button:focus {
-  background-color: #5bc0de;
   color: white;
+  background-color: #23b4be;
   animation: none; }
 
 @keyframes pulse {
   0% {
     transform: scale(0.95);
-    box-shadow: 0 0 0 0 #5bc0de; }
+    box-shadow: 0 0 0 0 white; }
   70% {
     transform: scale(1);
     box-shadow: 0 0 0 50px rgba(0, 0, 0, 0); }
@@ -118,10 +114,10 @@ span {
   background-color: white !important; }
 
 .dropdown-button-row:hover {
-  background-color: #5bc0decc !important; }
+  background-color: #23b4becc !important; }
 
 .dropdown-button {
-  color: #5bc0de !important; }
+  color: #23b4be !important; }
 
 .dropdown-button:hover {
   color: white !important; }
@@ -135,10 +131,10 @@ span {
   min-height: 200px; }
 
 .location {
-  color: #5bc0de; }
+  color: #23b4be; }
 
 .icon-container {
-  background-color: #5bc0de; }
+  background-color: #23b4be; }
 
 .icon {
   position: absolute;
@@ -209,25 +205,25 @@ span {
 
 .modal-button {
   color: white;
-  background-color: #5bc0de;
+  background-color: #23b4be;
   box-shadow: none; }
 
 .modal-button:hover {
-  color: #5bc0de;
+  color: #23b4be;
   background-color: white; }
 
 .modal-button:hover:active {
-  color: #5bc0de !important;
+  color: #23b4be !important;
   background-color: white !important; }
 
 .tool-badge {
   display: inline; }
 
 .badge-colour {
-  background-color: #5bc0de; }
+  background-color: #23b4be; }
 
 #navbar {
   text-align: center;
-  background-color: #5bc0decc;
+  background-color: #23b4becc;
   backdrop-filter: blur(10px) saturate(125%);
   -webkit-backdrop-filter: blur(10px); }

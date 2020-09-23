@@ -18,6 +18,6 @@ export const EDUCATIONS =
         icon: 'fas fa-school',
         description: 'I was a very well rounded student that participated in a plethora of different activies. I was part of sports teams, drama clubs, trivia competitions, \
                         business competitions, health competitions, and math competitions. Academics wise, I worked hard for the subject awards in English, French, History, and Biology. \
-                        Upon graduation, I was awarded the Governor General\'s Medal which recognizes the graduating student with the highest average.'
+                        I was awarded the Governor General\'s Medal which recognizes the graduating student with the highest average.'
     }
 ]
