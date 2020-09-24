@@ -204,10 +204,10 @@ span {
 .click {
   cursor: pointer; }
 
-.modal-header {
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #23b4be !important; }
+.modal-title {
+  font-size: 1.5em;
+  color: #23b4be;
+  font-weight: bold; }
 
 .modal-button {
   font-size: 1.2em;
