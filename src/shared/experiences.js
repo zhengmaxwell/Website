@@ -29,6 +29,6 @@ export const EXPERIENCES =
         icon: 'fas fa-dna',
         period: 'April 2019 - August 2019',
         description: 'Under Dr. Leo Chou, I had the opportunity to learn wet laboratory skills. I applied these to molecular and cellular engineering techniques in order to conduct \
-                        various tests using PCR and Gel Electrophoresis to syntehsize and analyze DNA.'
+                        various tests using PCR and Gel Electrophoresis to synthesize and analyze DNA.'
     }
 ]
