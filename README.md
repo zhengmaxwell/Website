@@ -1,1 +1,1 @@
-<a href="https://zhengmaxwell.github.io" target="_blank">My personal website</a>
+<a href="https://maxwellzheng.com" target="_blank">My personal website</a>
