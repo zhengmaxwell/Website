@@ -43,6 +43,9 @@ export default class Experiences extends Component {
                 <Row id="experiences" className="category justify-content-center">
                     <h2>Experiences</h2>
                 </Row>
+                <Row className="justify-content-center">
+                    <h3>Turning "One Day" into "Day One"</h3>
+                </Row>
                  <hr/>
                  <VerticalTimeline>
                     {rows}
