@@ -9,6 +9,7 @@ import 'bootstrap-social/bootstrap-social.css';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import * as $ from 'jquery';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -16,8 +17,7 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+$(".title-img-fade").delay(1000).animate({"opacity": "1"}, 700);
+$(".title-foreground-fade").delay(2000).animate({"opacity": "1"}, 700);
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();

@@ -7,6 +7,7 @@ import Skills from './SkillsComponent';
 import Contact from './ContactComponent';
 import Projects from './ProjectsComponent';
 import About from './AboutComponent';
+import * as $ from 'jquery'
 
 
 export default class Main extends Component {
@@ -16,7 +17,7 @@ export default class Main extends Component {
             <div >
                 <Title/>
                 <Header/>
-                <body className="asdf">
+                <body>
                     <About/>
                     <Education/>
                     <Experiences/>

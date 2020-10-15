@@ -7,8 +7,8 @@ export default class Title extends Component {
     render() {
         return (
             <div>
-                <Jumbotron className="title-img">
-                    <Container>
+                <Jumbotron className="title-img title-img-fade">
+                    <Container className="title-foreground-fade">
                         <Row className="justify-content-center" style={{padding: '20% 0'}}>
                                 <h1 className="title">Maxwell Zheng</h1>
                         </Row>
