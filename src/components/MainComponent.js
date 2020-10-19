@@ -23,8 +23,8 @@ export default class Main extends Component {
                     <Experiences/>
                     <Projects/>
                     <Skills/>
-                    <Contact/>
                 </body>
+                <Contact/>
             </div>
         );
     }

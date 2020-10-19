@@ -54,9 +54,22 @@ span {
   text-decoration: none;
   color: #23b4be; }
 
+.link-footer {
+  font-size: 20px;
+  color: white;
+  margin: 30px;
+  text-align: center; }
+
+.link-footer:hover {
+  text-decoration: none;
+  color: white; }
+
 .title {
   font-size: 100px;
   color: white; }
+
+.title-text {
+  padding: 20% 0; }
 
 .title-img {
   background-image: url(/images/beach.jpeg);
@@ -246,3 +259,18 @@ span {
   background-color: #23b4becc;
   backdrop-filter: blur(10px) saturate(125%);
   -webkit-backdrop-filter: blur(10px); }
+
+.footer {
+  background-image: url(/images/beach.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0; }
+
+.footer-header {
+  padding-top: 100px;
+  color: white; }
+
+hr.title-footer {
+  border-color: white; }
