@@ -92,7 +92,7 @@ export default class Header extends Component {
                                 </NavItem>
                                 <NavItem className="nav-link">
                                     <NavLink className="text-light" style={{textAlign:"center"}} href="#education">
-                                        <span className="fas fa-university"></span><br/>Education
+                                        <span className="fas fa-graduation-cap"></span><br/>Education
                                     </NavLink>
                                 </NavItem>
                                 <NavItem className="nav-link">

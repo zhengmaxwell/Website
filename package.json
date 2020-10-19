@@ -32,9 +32,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build-and-compress": "npm-run-all build minify",
     "gh-pages": "gh-pages -d build",
-    "deploy": "npm-run-all build-and-compress gh-pages"
+    "deploy": "npm-run-all build minify gh-pages"
   },
   "eslintConfig": {
     "extends": "react-app"

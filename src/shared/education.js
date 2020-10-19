@@ -5,7 +5,7 @@ export const EDUCATIONS =
         degree: 'Bachelors of Applied Science in Engineering Science',
         location: 'Toronto, Ontario',
         period: '2018 - 2022',
-        icon: 'fas fa-graduation-cap',
+        icon: 'fas fa-university',
         description: `I am specializing in <strong>Robotics Engineering</strong> whilst pursuing a double minor in <strong>Artificial Intelligence and Engineering Business.</strong> \
                         I have participated in the University of Toronto Aerospace Team as a Rocket Propulsion Engineer.\
                         Interesting courses I have taken include: Digital Logic, Robotic Design, Machine Learning, and Computational Linguistics.`

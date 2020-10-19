@@ -22,7 +22,9 @@ h2 {
 
 h3 {
   font-size: 2em;
-  color: #ca8317; }
+  color: #ca8317;
+  text-align: center;
+  margin: 0 10px; }
 
 h4 {
   font-size: 2em;
