@@ -1,28 +1,28 @@
 {
   "files": {
     "main.css": "/static/css/main.75114ff3.chunk.css",
-    "main.js": "/static/js/main.2ad73b02.chunk.js",
-    "main.js.map": "/static/js/main.2ad73b02.chunk.js.map",
+    "main.js": "/static/js/main.180823f7.chunk.js",
+    "main.js.map": "/static/js/main.180823f7.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3374ac37.js",
     "runtime-main.js.map": "/static/js/runtime-main.3374ac37.js.map",
-    "static/css/2.1bc832f4.chunk.css": "/static/css/2.1bc832f4.chunk.css",
-    "static/js/2.58617f72.chunk.js": "/static/js/2.58617f72.chunk.js",
-    "static/js/2.58617f72.chunk.js.map": "/static/js/2.58617f72.chunk.js.map",
+    "static/css/2.c4f3cf5f.chunk.css": "/static/css/2.c4f3cf5f.chunk.css",
+    "static/js/2.7adf7adc.chunk.js": "/static/js/2.7adf7adc.chunk.js",
+    "static/js/2.7adf7adc.chunk.js.map": "/static/js/2.7adf7adc.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.5ff22bc89740a723348340488e4274fe.js": "/precache-manifest.5ff22bc89740a723348340488e4274fe.js",
+    "precache-manifest.558085b1d23ace2f2e884da41011dd8d.js": "/precache-manifest.558085b1d23ace2f2e884da41011dd8d.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.1bc832f4.chunk.css.map": "/static/css/2.1bc832f4.chunk.css.map",
+    "static/css/2.c4f3cf5f.chunk.css.map": "/static/css/2.c4f3cf5f.chunk.css.map",
     "static/css/main.75114ff3.chunk.css.map": "/static/css/main.75114ff3.chunk.css.map",
-    "static/js/2.58617f72.chunk.js.LICENSE.txt": "/static/js/2.58617f72.chunk.js.LICENSE.txt",
-    "static/media/brands.css": "/static/media/fa-brands-400.dc0bd022.woff",
-    "static/media/solid.css": "/static/media/fa-solid-900.ee09ad75.woff",
+    "static/js/2.7adf7adc.chunk.js.LICENSE.txt": "/static/js/2.7adf7adc.chunk.js.LICENSE.txt",
+    "static/media/brands.css": "/static/media/fa-brands-400.f075c50f.woff2",
+    "static/media/solid.css": "/static/media/fa-solid-900.8e1ed89b.woff2",
     "static/media/font-awesome.min.css": "/static/media/fontawesome-webfont.fee66e71.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.3374ac37.js",
-    "static/css/2.1bc832f4.chunk.css",
-    "static/js/2.58617f72.chunk.js",
+    "static/css/2.c4f3cf5f.chunk.css",
+    "static/js/2.7adf7adc.chunk.js",
     "static/css/main.75114ff3.chunk.css",
-    "static/js/main.2ad73b02.chunk.js"
+    "static/js/main.180823f7.chunk.js"
   ]
 }
