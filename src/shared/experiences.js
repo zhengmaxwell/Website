@@ -12,7 +12,7 @@ export const EXPERIENCES =
                         and created automated regressions tests. BT has since been bought by Alstom. Let\'s hope this doesn\'t become a trend.'
     },
     {
-        company: 'BOMBARDIER Aviation',
+        company: 'BOMBARDIER Aerospace',
         position: 'Data Engineering Intern',
         location: 'Toronto, Ontario',
         icon: 'fas fa-plane',
