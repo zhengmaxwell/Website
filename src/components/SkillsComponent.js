@@ -24,7 +24,7 @@ export default class Skills extends Component {
             });
             rows.push(
                 <div>
-                    <Fade bottom big>
+                    <Fade bottom>
                         <Row>
                             <Col>
                                 <h4>{skill.name}</h4>
