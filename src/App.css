@@ -5,7 +5,21 @@
 * {
   font-size: 100%;
   font-family: Calibri, sans-serif;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; }
+
+::-webkit-scrollbar {
+  width: 0.75em; }
+
+::-webkit-scrollbar-track {
+  visibility: hidden;
+  z-index: -100;
+  background-color: #fffaf0;
+  border-radius: 10px; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #23b4be; }
 
 h1 {
   text-align: center; }

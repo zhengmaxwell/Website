@@ -1,8 +1,22 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Jumbotron, Button} from 'reactstrap';
+import * as $ from 'jquery';
 
 
 export default class Title extends Component {
+
+    constructor(props) {
+        super();
+
+        this.allowScroll = this.allowScroll.bind(this);
+    }
+
+    allowScroll() {
+        $("html").delay(1000).queue(function (next) {
+            $("html").css("overflow", "overlay").animate({"opacity": "1"});
+            next();
+        });
+    }
 
     render() {
         return (
@@ -16,7 +30,7 @@ export default class Title extends Component {
                             <hr className="title-footer"/>
                         </div>
                         <Row className="justify-content-start">
-                            <a href="#navbar"><Button className="pulse-button"><i className="fa fa-3x fa-chevron-down"></i></Button></a>
+                            <a href="#navbar"><Button className="pulse-button" onClick={() => this.allowScroll()}><i className="fa fa-3x fa-chevron-down"></i></Button></a>
                         </Row>
                     </Container>
                 </Jumbotron>

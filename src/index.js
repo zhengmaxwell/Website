@@ -11,12 +11,17 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import * as $ from 'jquery';
 
+if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
+  	window.location.replace(window.location.href.slice(0, window.location.href.split('/', 3).join('/').length)); // returns to title on reload
+}
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  	<React.StrictMode>
+    	<App />
+  	</React.StrictMode>,
+  	document.getElementById('root')
 );
+$("html").css("overflow", "hidden");
 $(".title-img-fade").delay(1000).animate({"opacity": "1"}, 700);
 $(".title-foreground-fade").delay(2000).animate({"opacity": "1"}, 700);
 
