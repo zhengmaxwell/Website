@@ -23,7 +23,7 @@ export default class Skills extends Component {
                 );
             });
             rows.push(
-                <div>
+                <div className="skill-category">
                     <Fade bottom>
                         <Row>
                             <Col>
