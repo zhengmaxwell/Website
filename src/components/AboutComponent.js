@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import ReactTextRotator from 'react-text-rotator';
 import { PROFILE } from '../shared/profile';
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 
 export default class About extends Component {
@@ -23,15 +25,19 @@ export default class About extends Component {
                 </Row>
                 <hr/>
                 <div className="row-content">
-                    <Row className="justify-content-center">
-                        <img src={profile.image} className="rounded-circle" width="200" height="200" alt="Me"/>
-                    </Row>
-                    <Row>
-                        <Col md={{size:10, offset:1}}>
-                            <br/>
-                            <div className="profile" dangerouslySetInnerHTML={{__html: profile.description}}/>
-                        </Col>
-                    </Row>
+                    <Zoom>
+                        <Row className="justify-content-center">
+                            <img src={profile.image} className="rounded-circle" width="200" height="200" alt="Me"/>
+                        </Row>
+                    </Zoom>
+                    <Fade big>
+                        <Row>
+                            <Col md={{size:10, offset:1}}>
+                                <br/>
+                                <div className="profile" dangerouslySetInnerHTML={{__html: profile.description}}/>
+                            </Col>
+                        </Row>
+                    </Fade>
                 </div>
             </Container>
         );

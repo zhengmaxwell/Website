@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { SKILLS } from '../shared/skills';
+import Fade from 'react-reveal/Fade'
 
 
 export default class Skills extends Component {
@@ -23,18 +24,20 @@ export default class Skills extends Component {
             });
             rows.push(
                 <div>
-                    <Row>
-                        <Col>
-                            <h4>{skill.name}</h4>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col>
-                            <ul className="split-list-3">
-                                {list}
-                            </ul>
-                        </Col>
-                    </Row>
+                    <Fade bottom big>
+                        <Row>
+                            <Col>
+                                <h4>{skill.name}</h4>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col>
+                                <ul className="split-list-3">
+                                    {list}
+                                </ul>
+                            </Col>
+                        </Row>
+                    </Fade>
                 </div>
             );
         });

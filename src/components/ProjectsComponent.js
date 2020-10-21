@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Button, Modal, ModalHeader, ModalBody, ModalFooter, Card, CardImg, CardBody, CardTitle, CardText, Badge } from 'reactstrap';
 import { PROJECTS } from '../shared/projects';
+import Zoom from 'react-reveal/Zoom';
 
 
 export default class Projects extends Component {
@@ -39,12 +40,14 @@ export default class Projects extends Component {
 
             rows.push(
                 <div>
-                    <div className="click hover-container" onClick={() => this.toggleModal(project.name)}>
-                        <img className="hover-image" src={project.image}/>
-                        <div className="hover-text">
-                            {project.name}
+                    <Zoom>
+                        <div className="click hover-container" onClick={() => this.toggleModal(project.name)}>
+                            <img className="hover-image" src={project.image}/>
+                            <div className="hover-text">
+                                {project.name}
+                            </div>
                         </div>
-                    </div>
+                    </Zoom>
 
                     <Modal isOpen={this.state[project.name]} toggle={() => this.toggleModal(project.name)} >
                         <ModalHeader toggle={() => this.toggleModal(project.name)}><div className="modal-title">{project.name}</div></ModalHeader>
