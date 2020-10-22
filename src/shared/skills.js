@@ -7,6 +7,7 @@ export const SKILLS =
             'C/C++',
             'C#',
             'Java',
+            'ROS',
             'HTML',
             'CSS',
             'Bootstrap',
@@ -22,9 +23,11 @@ export const SKILLS =
         list: [
             'Verilog',
             'FPGA',
+            'PCB',
             'ARM Assembly',
             'Arduino',
-            'Raspberry Pi'
+            'Raspberry Pi',
+            'SPICE'
         ]
     },
     {
@@ -52,6 +55,8 @@ export const SKILLS =
             'Jupyter Notebook',
             'Apache',
             'Solidworks',
+            'KiCad',
+            'LTSpice'
         ]
     },
     {

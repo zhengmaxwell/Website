@@ -12,10 +12,7 @@
   width: 0.75em; }
 
 ::-webkit-scrollbar-track {
-  visibility: hidden;
-  z-index: -100;
-  background-color: #fffaf0;
-  border-radius: 10px; }
+  display: none; }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;

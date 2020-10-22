@@ -20,16 +20,12 @@ $background-colour: #fffaf0;
 }
  
 ::-webkit-scrollbar-track {
-    visibility: hidden;
-    z-index: -100;
-    background-color: $background-colour;
-    border-radius: 10px;
+    display: none;
 }
  
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: $primary-colour;
-
 }
 
 h1 {
