@@ -82,6 +82,7 @@ export default class Header extends Component {
             <React.Fragment>
                 <Navbar id="navbar" expand="lg" data-toggle="sticky" dark>
                     <Container>
+                        <NavbarBrand href="/"><img src="images/logo_white.png" style={{"height": "2em"}}></img></NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav}/>
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav className="m-auto" navbar>
