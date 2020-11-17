@@ -96,8 +96,20 @@ span {
 .title-img-fade {
   opacity: 0; }
 
+.title-logo-fade {
+  text-align: center;
+  padding: 20% 0;
+  display: none; }
+
+.title-logo {
+  height: 50vw; }
+
+@media only screen and (min-width: 992px) {
+  .title-logo {
+    height: 50vh; } }
+
 .title-foreground-fade {
-  opacity: 0; }
+  display: none; }
 
 .pulse-button {
   position: absolute;

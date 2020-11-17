@@ -22,6 +22,11 @@ export default class Title extends Component {
         return (
             <div>
                 <Jumbotron className="title-img title-img-fade">
+                    <Container>
+                        <div className="title-logo-fade">
+                            <img className="title-logo" src="images/logo_white.png"></img>
+                        </div>
+                    </Container>
                     <Container className="title-foreground-fade">
                         <div className="title-text">
                             <Row className="justify-content-center">

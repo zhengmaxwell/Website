@@ -22,7 +22,9 @@ ReactDOM.render(
   	document.getElementById('root')
 );
 $("html").css("overflow", "hidden");
-$(".title-img-fade").delay(1000).animate({"opacity": "1"}, 700);
-$(".title-foreground-fade").delay(2000).animate({"opacity": "1"}, 700);
+$(".title-img-fade").delay(1000).animate({"opacity": "1"}, 500);
+$(".title-logo-fade").delay(2000).fadeIn(500);
+$(".title-logo-fade").delay(1000).fadeOut(500);
+$(".title-foreground-fade").delay(4000).fadeIn(500);
 
 serviceWorker.unregister();
