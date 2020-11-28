@@ -92,6 +92,10 @@ span {
   height: 100vh;
   margin: 0; }
 
+@media only screen and (min-width: 992px) {
+  .title-img {
+    background-attachment: fixed; } }
+
 .title-img-fade {
   opacity: 0; }
 
@@ -292,6 +296,10 @@ span {
   background-position: center;
   background-repeat: no-repeat;
   margin: 0; }
+
+@media only screen and (min-width: 992px) {
+  .footer {
+    background-attachment: fixed; } }
 
 .footer-header {
   padding-top: 100px;

@@ -1,6 +1,7 @@
 $primary-colour: #23b4be;
 $secondary-colour: rgb(202, 131, 23);
 $background-colour: #fffaf0;
+$min-width: 992px;
 
 :export {
     iconBackground: $primary-colour;
@@ -31,7 +32,7 @@ h1 {
     text-align: center;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: $min-width) {
     h1 {
         font-size: 10em !important;
         text-align: center;
@@ -118,6 +119,12 @@ span {
     margin: 0;
 }
 
+@media only screen and (min-width: $min-width) {
+    .title-img {
+        background-attachment: fixed;
+    }
+}
+
 .title-img-fade {
     opacity: 0;
 }
@@ -132,7 +139,7 @@ span {
     height: 50vw;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: $min-width) {
     .title-logo {
         height: 50vh;
     }
@@ -256,7 +263,7 @@ span {
     margin: 0 auto;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: $min-width) {
     .split-list-2 {
         column-count: 2;
     }
@@ -367,6 +374,12 @@ span {
     background-position: center;
     background-repeat: no-repeat;
     margin: 0;
+}
+
+@media only screen and (min-width: $min-width) {
+    .footer {
+        background-attachment: fixed;
+    }
 }
 
 .footer-header {
