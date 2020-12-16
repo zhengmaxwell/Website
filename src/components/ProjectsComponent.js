@@ -38,6 +38,13 @@ export default class Projects extends Component {
                 );
             });
 
+            let link_btn;
+            if (project.link) {
+                link_btn = <Button className="modal-button" href={project.link} target="_blank">See Project</Button>;
+            } else {
+                link_btn = <div></div>;
+            }
+
             rows.push(
                 <div>
                     <Zoom>
@@ -58,13 +65,13 @@ export default class Projects extends Component {
                                     <CardTitle>{tools}</CardTitle>
                                     <CardText className="modal-description">{project.description}</CardText>
                                     <br/>
-                                    <Button className="modal-button" href={project.link} target="_blank">See Project</Button>
+                                    {link_btn}
                                 </CardBody>
                             </Card>
                         </ModalBody>
                     </Modal>
                 </div>
-            );
+            );   
         });
 
         return (

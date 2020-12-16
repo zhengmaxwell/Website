@@ -27,5 +27,12 @@ export const PROJECTS =
         tools: ['C++', 'Arduino', 'SolidWorks'],
         image: '/images/bready.png',
         link: 'https://github.com/zhengmaxwell/Bready'
+    },
+    {
+        name: 'Power Adapter',
+        description: 'A simple two layer PCB of a power adapter using linear and bridge regulators.',
+        tools: ['PCB', 'KiCad'],
+        image: '/images/power_adapter_pcb.png',
+        link: ''
     }
 ]
