@@ -35,6 +35,7 @@
     "react-vertical-timeline-component": "^3.0.2",
     "reactstrap": "^8.5.1",
     "ssri": "^8.0.1",
+    "trim-newlines": "4.0.1",
     "url-parse": "^1.5.1",
     "y18n": "^5.0.8"
   },
