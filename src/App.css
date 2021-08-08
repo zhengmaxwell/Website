@@ -85,7 +85,7 @@ span {
   padding: 20% 0; }
 
 .title-img {
-  background-image: url(/images/beach.jpeg);
+  background-image: url(images/beach.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -291,7 +291,7 @@ span {
   -webkit-backdrop-filter: blur(10px); }
 
 .footer {
-  background-image: url(/images/beach.jpeg);
+  background-image: url(images/beach.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
